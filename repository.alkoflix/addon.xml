@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0" provider-name="Les alKODIques">
     <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
+        <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
     <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
         <dir>
@@ -16,6 +16,8 @@
         <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
         <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
         <license>GPL-3.0</license>
+        <news lang="fr">Première version du dépôt officiel alkoFlix.</news>
+        <news lang="en">First official alkoFlix repository release.</news>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>

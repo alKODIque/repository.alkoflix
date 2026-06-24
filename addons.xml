@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="plugin.video.alkoflix" name="alkoFlix" version="2.0" provider-name="Les alKODIques">
+    <addon id="plugin.video.alkoflix" version="2.0.13" name="alkoFlix" provider-name="Les alKODIques">
         <requires>
-            <import addon="xbmc.python" version="3.0.0" />
-            <import addon="script.module.requests" />
-            <import addon="script.module.addon.signals" />
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="script.module.requests"/>
+            <import addon="script.module.addon.signals"/>
         </requires>
         <extension point="xbmc.python.pluginsource" library="resources/lib/router.py">
             <provides>video</provides>
         </extension>
-        <extension point="xbmc.service" library="resources/lib/service.py" />
+        <extension point="xbmc.service" library="resources/lib/service.py"/>
         <extension point="xbmc.addon.metadata">
+            <reuselanguageinvoker>false</reuselanguageinvoker>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
             <summary lang="en">Everything you love to watch, whenever you want.</summary>
             <summary lang="fr">Tout ce que vous aimez, quand vous le voulez.</summary>
             <description lang="en">French video streaming add-on. Requires a subscription to a compatible debrid service.</description>
             <description lang="fr">Extension vidéo de streaming en français. Nécessite un abonnement à un service de débridage compatible.</description>
-            <license>GPL-3.0</license>
-            <news lang="fr">v2.0 : Première release officielle.</news>
-            <platform>all</platform>
+            <news lang="en">Version 2.0.13: adds catalogue-only Trakt, MDBList and TMDb account menus at alkoPaste catalogue root.</news>
+            <news lang="fr">Version 2.0.13 : ajout des menus Trakt, MDBList et TMDb à la racine du Catalogue alkoPaste, filtrés aux IDs présents dans le catalogue.</news>
             <assets>
                 <icon>plugin.video.alkoflix/icon.png</icon>
                 <fanart>plugin.video.alkoflix/fanart.jpg</fanart>
@@ -27,7 +28,7 @@
     </addon>
     <addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0" provider-name="Les alKODIques">
         <requires>
-            <import addon="xbmc.addon" version="12.0.0" />
+            <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
             <dir>
@@ -42,6 +43,8 @@
             <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
             <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
             <license>GPL-3.0</license>
+            <news lang="fr">Première version du dépôt officiel alkoFlix.</news>
+            <news lang="en">First official alkoFlix repository release.</news>
             <platform>all</platform>
             <assets>
                 <icon>repository.alkoflix/icon.png</icon>
