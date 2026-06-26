@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.0.35" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.0.36" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.addon.signals"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.addon.signals" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/router.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" />
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -18,37 +17,28 @@
         <summary lang="fr">Tout ce que vous aimez, quand vous le voulez.</summary>
         <description lang="en">French video streaming add-on. Requires a subscription to a compatible debrid service.</description>
         <description lang="fr">Extension vidéo de streaming en français. Nécessite un abonnement à un service de débridage compatible.</description>
-        <news lang="en">Version 2.0.35: Catalogue alkoPaste shortcuts for documentary series and Replay weekly trends now reuse the corresponding TMDb list content, keeping the root shortcut aligned with Listes TMDb.</news>
-        <news lang="fr">Version 2.0.35 : les raccourcis Tendances de la semaine du Catalogue alkoPaste pour Documentaires/Séries et Replay reprennent maintenant le contenu des listes TMDb correspondantes.</news>
         <assets>
-            <icon>plugin.video.alkoflix/icon.png</icon>
-            <fanart>plugin.video.alkoflix/fanart.jpg</fanart>
-            <clearlogo>plugin.video.alkoflix/clearlogo.png</clearlogo>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <clearlogo>clearlogo.png</clearlogo>
         </assets>
+        <news lang="en">Version 2.0.36: urgent fix for personal watch/progress lists. Trakt, MDBList, TMDb and local alkoFlix lists no longer filter out anime, animation, documentaries, reality, news or talk-shows.</news>
+        <news lang="fr">Version 2.0.36 : correctif urgent des listes personnelles et de suivi. Trakt, MDBList, TMDb et alkoFlix local ne filtrent plus les animés, séries animées, documentaires, télé-réalités, actualités ou talk-shows.</news>
     </extension>
 </addon>
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0" provider-name="Les alKODIques">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
+<addon id="repository.alkoflix" version="1.0" name="Dépôt alkoFlix" provider-name="Les alKODIques">
     <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/alkODIque/repository.alkoflix/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/alkODIque/repository.alkoflix/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/alkODIque/repository.alkoflix/master/</datadir>
-        </dir>
+        <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="fr">Dépôt officiel alkoFlix pour Kodi.</summary>
         <summary lang="en">Official alkoFlix repository for Kodi.</summary>
         <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
         <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
-        <license>GPL-3.0</license>
-        <news lang="fr">Première version du dépôt officiel alkoFlix.</news>
-        <news lang="en">First official alkoFlix repository release.</news>
+        <news lang="fr">Dépôt officiel alkoFlix.</news>
+        <news lang="en">Official alkoFlix repository.</news>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
@@ -56,5 +46,4 @@
         </assets>
     </extension>
 </addon>
-
 </addons>
