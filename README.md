@@ -15,3 +15,10 @@ Dépôt Kodi officiel pour alkoFlix et ses extensions associées.
 9. Installer `alkoFlix`.
 
 Une fois le dépôt installé, les prochaines mises à jour d’alkoFlix seront proposées automatiquement par Kodi.
+
+## Demandes de fonctionnalités et signalements de bogues
+
+Toutes demande de fonctionnalités supplémentaires, déclarations de bogues ou besoins d'informations supplémentaires seront traités uniquement depuis [le forum officiel de l'extension](https://lesalkodiques.com/portail/space/alkoflix/home)
+
+## Documentation
+Le Guide d'utilisation officiel de l'extention est [disponible ici](https://lesalkodiques.com/portail/course/configurationdebasealkoflix/lessons).
