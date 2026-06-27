@@ -18,9 +18,9 @@
         <description lang="en">French video streaming add-on. Requires a subscription to a compatible debrid service.</description>
         <description lang="fr">Extension vidéo de streaming en français. Nécessite un abonnement à un service de débridage compatible.</description>
         <assets>
-            <icon>plugin.video.alkoflix/icon.png</icon>
-            <fanart>plugin.video.alkoflix/fanart.jpg</fanart>
-            <clearlogo>plugin.video.alkoflix/clearlogo.png</clearlogo>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <clearlogo>clearlogo.png</clearlogo>
         </assets>
         <news lang="en">Version 2.0.36: urgent fix for personal watch/progress lists. Trakt, MDBList, TMDb and local alkoFlix lists no longer filter out anime, animation, documentaries, reality, news or talk-shows.</news>
         <news lang="fr">Version 2.0.36 : correctif urgent des listes personnelles et de suivi. Trakt, MDBList, TMDb et alkoFlix local ne filtrent plus les animés, séries animées, documentaires, télé-réalités, actualités ou talk-shows.</news>
