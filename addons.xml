@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.0.39" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.0.41" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -22,15 +22,12 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Version 2.0.39: improves Japanese anime episode searches with TMDb alternate episode groups and Up Next continuity.</news>
-        <news lang="fr">Version 2.0.39 : améliore la recherche des épisodes d’animés japonais avec les groupes d’épisodes TMDb alternatifs et la continuité Up Next.</news>
+        <news lang="en">See the full changelog via the Logs tools menu.</news>
+        <news lang="fr">Voir le changelog complet via le menu Outils de logs</news>
     </extension>
 </addon>
-<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
-    </requires>
-    <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
+<addon id="repository.alkoflix" version="1.0.1" name="repository.alkoflix" provider-name="Les alKODIques">
+    <extension point="xbmc.addon.repository" name="alkoFlix Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
@@ -52,5 +49,4 @@
         </assets>
     </extension>
 </addon>
-
 </addons>

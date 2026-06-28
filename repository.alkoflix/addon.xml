@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
-    </requires>
-    <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
+<addon id="repository.alkoflix" version="1.0.1" name="repository.alkoflix" provider-name="Les alKODIques">
+    <extension point="xbmc.addon.repository" name="alkoFlix Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
