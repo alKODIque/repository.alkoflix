@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0" />
+    </requires>
+    <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">Dépôt officiel alkoFlix pour Kodi.</summary>
+        <summary lang="en">Official alkoFlix repository for Kodi.</summary>
+        <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
+        <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
+        <license>GPL-3.0</license>
+        <news lang="fr">Correctif du schéma du dépôt Kodi : restauration du bloc &lt;dir&gt; requis par Kodi 21 et incrémentation du dépôt en 1.0.1 pour forcer la réinstallation.</news>
+        <news lang="en">Kodi repository schema fix: restored the &lt;dir&gt; block required by Kodi 21 and bumped the repository to 1.0.1 to force reinstall/update.</news>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

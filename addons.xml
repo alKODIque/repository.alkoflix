@@ -18,9 +18,9 @@
         <description lang="en">French video streaming add-on. Requires a subscription to a compatible debrid service.</description>
         <description lang="fr">Extension vidéo de streaming en français. Nécessite un abonnement à un service de débridage compatible.</description>
         <assets>
-            <icon>plugin.video.alkoflix/icon.png</icon>
-            <fanart>plugin.video.alkoflix/fanart.jpg</fanart>
-            <clearlogo>plugin.video.alkoflix/clearlogo.png</clearlogo>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <clearlogo>clearlogo.png</clearlogo>
         </assets>
         <news lang="en">Version 2.0.39: improves Japanese anime episode searches with TMDb alternate episode groups and Up Next continuity.</news>
         <news lang="fr">Version 2.0.39 : améliore la recherche des épisodes d’animés japonais avec les groupes d’épisodes TMDb alternatifs et la continuité Up Next.</news>
