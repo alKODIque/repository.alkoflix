@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.0.36" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.0.39" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -18,17 +18,17 @@
         <description lang="en">French video streaming add-on. Requires a subscription to a compatible debrid service.</description>
         <description lang="fr">Extension vidéo de streaming en français. Nécessite un abonnement à un service de débridage compatible.</description>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <clearlogo>clearlogo.png</clearlogo>
+            <icon>plugin.video.alkoflix/icon.png</icon>
+            <fanart>plugin.video.alkoflix/fanart.jpg</fanart>
+            <clearlogo>plugin.video.alkoflix/clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Version 2.0.36: urgent fix for personal watch/progress lists. Trakt, MDBList, TMDb and local alkoFlix lists no longer filter out anime, animation, documentaries, reality, news or talk-shows.</news>
-        <news lang="fr">Version 2.0.36 : correctif urgent des listes personnelles et de suivi. Trakt, MDBList, TMDb et alkoFlix local ne filtrent plus les animés, séries animées, documentaires, télé-réalités, actualités ou talk-shows.</news>
+        <news lang="en">Version 2.0.39: improves Japanese anime episode searches with TMDb alternate episode groups and Up Next continuity.</news>
+        <news lang="fr">Version 2.0.39 : améliore la recherche des épisodes d’animés japonais avec les groupes d’épisodes TMDb alternatifs et la continuité Up Next.</news>
     </extension>
 </addon>
 <addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
     <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="xbmc.addon" version="12.0.0" />
     </requires>
     <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
         <dir>
@@ -52,4 +52,5 @@
         </assets>
     </extension>
 </addon>
+
 </addons>
