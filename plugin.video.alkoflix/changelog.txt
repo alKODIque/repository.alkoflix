@@ -1,3 +1,42 @@
+v2.0.89
+- Menu Dessins animés > Films animés : retrait de l’entrée « Classiques de Disney », qui restait vide malgré les essais de listes TMDb.
+
+v2.0.88
+- Correctif menu Dessins animés : « Classiques de Disney » garde la liste TMDb publique 4768, mais ajoute un secours via la page publique TMDb si l'API retourne vide.
+- Le dossier ne devrait plus rester vide tant que la page TMDb « Disney Movie Collection » contient des films.
+
+v2.0.87
+- Correctif menu Dessins animés : « Classiques de Disney » utilise maintenant la liste TMDb publique 4768 - Disney Movie Collection.
+- Les anciennes entrées en cache qui pointaient encore vers la liste TMDb 338 sont redirigées vers le nouveau menu.
+
+v2.0.86
+- Réglages sources : le filtre par taille affiche maintenant clairement « Taille maximum (Go) ».
+- Correctif filtre taille : la valeur saisie est cohérente avec le sélecteur qui affiche les tailles en Go/GB.
+- Compatibilité anciens réglages : les anciennes valeurs en Mo très élevées (ex. 10000) sont converties automatiquement en Go pour garder le comportement attendu.
+
+v2.0.85
+- Correctif filtres résultats : le filtre par taille est maintenant appliqué même aux résultats marqués bypass_filter.
+- Détection de taille renforcée dans size, size_label, info, extraInfo, name, URLName et name_info, avec prise en charge de GB/GiB/Go, MB/MiB/Mo et TB/TiB/To.
+- Les sources externes respectent aussi le filtre par taille lorsque l’option « Appliquer les tris/filtres alkoFlix aux sources externes » est activée.
+
+v2.0.84
+- Correctif menu Dessins animés : « Classiques de Disney » ne dépend plus de l’ancienne liste publique TMDb 338, qui peut retourner vide.
+- Le dossier utilise maintenant une requête TMDb Discover basée sur les studios Disney Animation/Walt Disney, avec un fallback interne pour éviter un menu vide.
+
+v2.0.83
+- Correctif filtres résultats : l’exclusion Dolby Vision est maintenant stricte, y compris pour les variantes DV, D/VISION, DOLBY VISION, DoVi, DVHE/DVH1.
+- Les exclusions REMUX/BluRay/HEVC/HDR/Dolby Vision/AV1 ne sont plus contournées par les résultats hybrides ni par les sources externes marquées bypass lorsque l’option d’application aux sources externes est activée.
+- La détection des infos vidéo lit davantage de champs retournés par les sources/manifests externes.
+
+v2.0.82
+- Correctif filtres résultats : les exclusions REMUX/BluRay/HEVC/HDR/Dolby Vision/AV1 sont maintenant appliquées en premier.
+- Un résultat hybride comme BluRay.REMUX est retiré si REMUX est exclu, même si BluRay est autorisé ou priorisé.
+
+v2.0.81
+- Sources intégrées : Movix et Free-Telecharger peuvent maintenant récupérer leur URL officielle depuis le paste alkoPastes qm9EYvrP.
+- La récupération passe par l’API alkoPastes fournie avec alkoFlix, sans utiliser la clé API personnelle de l’utilisateur.
+- Ajout d’un cache local de 12 h avec fallback sur l’ancien cache ou l’URL intégrée si l’API est indisponible.
+
 v2.0.80
 - Correctif Trakt : adaptation au changement API du 30 juin 2026.
 - Les statuts de visionnage films/séries sont maintenant récupérés avec pagination.
