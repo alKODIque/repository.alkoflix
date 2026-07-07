@@ -1,3 +1,21 @@
+v2.0.93
+- Synchronisation ALKO/Catalogue forcée une seule fois après mise à jour de l’addon.
+- Démarrage du moniteur ALKO plus rapide pour vérifier la mise à jour du catalogue.
+
+v2.0.92
+- Correction du lancement du service en contexte Kodi sans addon id implicite.
+- Les appels xbmcaddon.Addon() utilisés par le service ciblent explicitement plugin.video.alkoflix.
+- Ajout de journaux directs pour le démarrage/échec du service, visibles même hors mode debug.
+
+v2.0.91
+- Correctif du lancement du service de synchronisation ALKO/Catalogue au démarrage Kodi.
+- Ajout d’un bootstrap racine avec log de démarrage pour faciliter le diagnostic.
+
+v2.0.90
+- Correctif mise à jour automatique ALKO/Catalogue : le service auto applique maintenant le même anti-cache que les boutons manuels.
+- Ajout de logs plus clairs lorsque la synchronisation est ignorée ou qu’aucun changement distant n’est détecté.
+- Ajout d’un statut Maintenance pour voir la dernière vérification, la dernière synchro et la prochaine mise à jour prévue.
+
 v2.0.89
 - Menu Dessins animés > Films animés : retrait de l’entrée « Classiques de Disney », qui restait vide malgré les essais de listes TMDb.
 
