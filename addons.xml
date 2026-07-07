@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<?xml version="1.0" encoding="utf-8"?>
 <addon id="plugin.video.alkoflix" version="2.0.93" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -27,7 +26,6 @@
         <news lang="fr">Voir le changelog complet via le menu Outils de logs</news>
     </extension>
 </addon>
-<?xml version="1.0" encoding="utf-8"?>
 <addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.addon" version="12.0.0" />
