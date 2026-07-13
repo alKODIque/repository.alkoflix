@@ -1,9 +1,9 @@
+Version 2.1.8
+- Correction des faux positifs du contrôle de sécurité avant résolution : seules les données du lien/fichier choisi sont maintenant analysées.
+- Les fichiers exécutables secondaires présents dans un pack sont ignorés lorsqu’une vidéo sûre est disponible; le pack reste bloqué s’il ne contient aucune vidéo sûre.
+
 Version 2.1.7
 - Correction du repli des vignettes Landscape : le poster TMDb est maintenant toujours utilisé en dernier recours, même avec Fanart.tv et RPDb activés.
 
 Version 2.1.6
 - Ajout de la recherche directe par ID TMDb pour les films et les séries.
-
-Version 2.1.5
-- Changelog allégé : conservation des 3 dernières versions seulement.
-- Aucun changement fonctionnel.
