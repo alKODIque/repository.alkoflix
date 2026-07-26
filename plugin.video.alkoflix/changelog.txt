@@ -1,9 +1,12 @@
-Version 2.1.8
-- Correction des faux positifs du contrôle de sécurité avant résolution : seules les données du lien/fichier choisi sont maintenant analysées.
-- Les fichiers exécutables secondaires présents dans un pack sont ignorés lorsqu’une vidéo sûre est disponible; le pack reste bloqué s’il ne contient aucune vidéo sûre.
+Version 2.1.11
+- Retrait complet de la source intégrée Hydracker et de son champ de clé API dans les paramètres.
+- Les anciennes clés et options Hydracker sont supprimées des profils lors de la mise à jour et ne peuvent plus réactiver le fournisseur.
+- Hydracker est bloqué au niveau du moteur de sources, car son API ne fournit désormais que des fichiers NZB non pris en charge par cette intégration.
 
-Version 2.1.7
-- Correction du repli des vignettes Landscape : le poster TMDb est maintenant toujours utilisé en dernier recours, même avec Fanart.tv et RPDb activés.
+Version 2.1.10
+- Correction d’un crash Android/Kodi lors de la lecture d’un film ouvert depuis la filmographie d’un acteur dans les fenêtres d’information personnalisées.
+- Les fiches Personne et Film/Série ne sont plus empilées : la navigation est maintenant séquentielle, avec retour vers l’acteur uniquement si aucune lecture n’est lancée.
 
-Version 2.1.6
-- Ajout de la recherche directe par ID TMDb pour les films et les séries.
+Version 2.1.9
+- Correction du repli RPDb : lorsqu’une affiche avec notes est absente ou retourne une erreur 404, le poster TMDb/Fanart.tv déjà disponible est maintenant conservé.
+- Les URL RPDb sont vérifiées avant d’être envoyées à Kodi afin d’éviter les pochettes vides.
