@@ -1,3 +1,24 @@
+Version 2.1.15
+- Correction de l’affichage Unicode dans les fenêtres XML du sélecteur de liens.
+- Les noms contenant des accents, ligatures ou caractères non anglais sont désormais affichés intégralement (ex. « Dédé », « Noël », « Cœur »).
+- Le nom technique utilisé pour les recherches et la résolution reste séparé afin de ne modifier ni les filtres ni la lecture.
+- Les anciens caches de fournisseurs sont rafraîchis automatiquement une seule fois pour appliquer le correctif immédiatement.
+
+Version 2.1.14
+- Retrait complet de la source intégrée TORR9, dont le site a fermé.
+- Les installations existantes désactivent puis suppriment automatiquement l’interrupteur TORR9, sa clé API et ses anciens réglages.
+- Les préréglages officiels 1080p et 4K ne peuvent plus recréer TORR9, même à partir d’une ancienne copie des codes paste.
+
+Version 2.1.13
+- Retrait complet de l’ancienne source intégrée YGG, désormais fermée, sans modification de YGGReborn.
+- Les profils existants sont nettoyés à la mise à jour : l’ancien réglage provider.ygg est désactivé puis supprimé.
+- Les préréglages officiels 1080p et 4K ne peuvent plus réactiver YGG, même si une ancienne copie du code paste est encore utilisée.
+
+Version 2.1.12
+- La source ALKO respecte désormais strictement son interrupteur d’activation, y compris avec « Tester toutes les sources » et « Chercher avec toutes les sources ».
+- Le Catalogue alkoPaste reste utilisable seul sans provoquer le téléchargement ni la consultation de la base locale de liens ALKO.
+- Ajout d’un garde-fou interne empêchant tout appel direct de télécharger la base ALKO lorsque la source est désactivée.
+
 Version 2.1.11
 - Retrait complet de la source intégrée Hydracker et de son champ de clé API dans les paramètres.
 - Les anciennes clés et options Hydracker sont supprimées des profils lors de la mise à jour et ne peuvent plus réactiver le fournisseur.
