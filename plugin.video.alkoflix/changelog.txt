@@ -1,3 +1,12 @@
+Version 2.1.16
+- Correction de la détection des langues : SUBFRENCH, FRENCH.SUB et FR.SUB sont désormais affichés comme VOSTFR au lieu de French/FR.
+- Les releases combinant VOSTFR avec une véritable piste française conservent les deux informations dans le sélecteur (ex. VOSTFR/FR, VOSTFR/VFF, VOSTFR/VFQ).
+- Normalisation ciblée des noms de sources provenant des manifests externes : LESALKODIQUES devient ALKO et les suffixes « - Cache ... » ajoutés à certains noms de sources sont retirés sans modifier les normalisations existantes.
+- Lumio reste toujours identifié comme LUMIO dans la colonne du manifest, indépendamment de la source réelle affichée à côté (WAWA, ALKO, U2P, etc.).
+- Compatibilité étendue Kodi 21 Omega / Kodi 22 Piers pour les bases internes utilisées par la maintenance et le nettoyage des miniatures.
+- Détection adaptée de Textures13/Textures14, MyVideos131/MyVideos146 et ViewModes selon la version de Kodi exécutée, avec suivi des futurs schémas Piers lorsqu'ils évoluent.
+- Le comportement existant sous Kodi Omega est conservé afin d'éviter toute régression.
+
 Version 2.1.15
 - Correction de l’affichage Unicode dans les fenêtres XML du sélecteur de liens.
 - Les noms contenant des accents, ligatures ou caractères non anglais sont désormais affichés intégralement (ex. « Dédé », « Noël », « Cœur »).
@@ -8,26 +17,3 @@ Version 2.1.14
 - Retrait complet de la source intégrée TORR9, dont le site a fermé.
 - Les installations existantes désactivent puis suppriment automatiquement l’interrupteur TORR9, sa clé API et ses anciens réglages.
 - Les préréglages officiels 1080p et 4K ne peuvent plus recréer TORR9, même à partir d’une ancienne copie des codes paste.
-
-Version 2.1.13
-- Retrait complet de l’ancienne source intégrée YGG, désormais fermée, sans modification de YGGReborn.
-- Les profils existants sont nettoyés à la mise à jour : l’ancien réglage provider.ygg est désactivé puis supprimé.
-- Les préréglages officiels 1080p et 4K ne peuvent plus réactiver YGG, même si une ancienne copie du code paste est encore utilisée.
-
-Version 2.1.12
-- La source ALKO respecte désormais strictement son interrupteur d’activation, y compris avec « Tester toutes les sources » et « Chercher avec toutes les sources ».
-- Le Catalogue alkoPaste reste utilisable seul sans provoquer le téléchargement ni la consultation de la base locale de liens ALKO.
-- Ajout d’un garde-fou interne empêchant tout appel direct de télécharger la base ALKO lorsque la source est désactivée.
-
-Version 2.1.11
-- Retrait complet de la source intégrée Hydracker et de son champ de clé API dans les paramètres.
-- Les anciennes clés et options Hydracker sont supprimées des profils lors de la mise à jour et ne peuvent plus réactiver le fournisseur.
-- Hydracker est bloqué au niveau du moteur de sources, car son API ne fournit désormais que des fichiers NZB non pris en charge par cette intégration.
-
-Version 2.1.10
-- Correction d’un crash Android/Kodi lors de la lecture d’un film ouvert depuis la filmographie d’un acteur dans les fenêtres d’information personnalisées.
-- Les fiches Personne et Film/Série ne sont plus empilées : la navigation est maintenant séquentielle, avec retour vers l’acteur uniquement si aucune lecture n’est lancée.
-
-Version 2.1.9
-- Correction du repli RPDb : lorsqu’une affiche avec notes est absente ou retourne une erreur 404, le poster TMDb/Fanart.tv déjà disponible est maintenant conservé.
-- Les URL RPDb sont vérifiées avant d’être envoyées à Kodi afin d’éviter les pochettes vides.
