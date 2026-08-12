@@ -1,3 +1,11 @@
+Version 2.1.18
+- Correction de la détection de résolution utilisée par les tris et filtres des sources.
+- Les noms de trackers, providers ou équipes ne peuvent plus être interprétés comme une qualité vidéo : par exemple TR4KER ou H4KING ne déclenchent plus à tort une détection 4K.
+- Le champ de qualité déjà identifié par la source devient prioritaire pour le classement ; le nom réel de la release ou du fichier n'est utilisé qu'en repli lorsque la qualité est inconnue.
+- Le repli de résolution peut désormais récupérer correctement une qualité présente dans le nom final d'un lien direct, par exemple un fichier se terminant par .720p.MULTI.Team.H4KING.mkv.
+- La détection des marqueurs UHD, FHD et HD a été corrigée afin d'éviter les confusions entre 4K, 1080p et 720p.
+- Les tris par qualité reçoivent ainsi une résolution cohérente avec celle affichée dans le sélecteur.
+
 Version 2.1.17
 - Correction d’une régression introduite dans la v2.1.16 qui pouvait empêcher les tris et filtres alkoFlix de s’appliquer correctement aux sources externes lorsque l’option correspondante était activée.
 - Restauration du comportement de parsing des sources externes de la v2.1.15, qui était déjà stable et validé pour Lumio, AIOStreams et les manifests personnalisés.
@@ -12,9 +20,3 @@ Version 2.1.16
 - Compatibilité étendue Kodi 21 Omega / Kodi 22 Piers pour les bases internes utilisées par la maintenance et le nettoyage des miniatures.
 - Détection adaptée de Textures13/Textures14, MyVideos131/MyVideos146 et ViewModes selon la version de Kodi exécutée, avec suivi des futurs schémas Piers lorsqu'ils évoluent.
 - Le comportement existant sous Kodi Omega est conservé afin d'éviter toute régression.
-
-Version 2.1.15
-- Correction de l’affichage Unicode dans les fenêtres XML du sélecteur de liens.
-- Les noms contenant des accents, ligatures ou caractères non anglais sont désormais affichés intégralement (ex. « Dédé », « Noël », « Cœur »).
-- Le nom technique utilisé pour les recherches et la résolution reste séparé afin de ne modifier ni les filtres ni la lecture.
-- Les anciens caches de fournisseurs sont rafraîchis automatiquement une seule fois pour appliquer le correctif immédiatement.
