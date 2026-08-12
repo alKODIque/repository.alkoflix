@@ -1,3 +1,9 @@
+Version 2.1.17
+- Correction d’une régression introduite dans la v2.1.16 qui pouvait empêcher les tris et filtres alkoFlix de s’appliquer correctement aux sources externes lorsque l’option correspondante était activée.
+- Restauration du comportement de parsing des sources externes de la v2.1.15, qui était déjà stable et validé pour Lumio, AIOStreams et les manifests personnalisés.
+- Les correctifs d’affichage de la v2.1.16 restent conservés : VOSTFR/SUBFRENCH, normalisation ALKO, suppression ciblée des suffixes « - Cache ... » et identification correcte du manifest LUMIO.
+- La compatibilité Kodi 21 Omega / Kodi 22 Piers ajoutée à la maintenance et au nettoyage des miniatures est conservée.
+
 Version 2.1.16
 - Correction de la détection des langues : SUBFRENCH, FRENCH.SUB et FR.SUB sont désormais affichés comme VOSTFR au lieu de French/FR.
 - Les releases combinant VOSTFR avec une véritable piste française conservent les deux informations dans le sélecteur (ex. VOSTFR/FR, VOSTFR/VFF, VOSTFR/VFQ).
@@ -12,8 +18,3 @@ Version 2.1.15
 - Les noms contenant des accents, ligatures ou caractères non anglais sont désormais affichés intégralement (ex. « Dédé », « Noël », « Cœur »).
 - Le nom technique utilisé pour les recherches et la résolution reste séparé afin de ne modifier ni les filtres ni la lecture.
 - Les anciens caches de fournisseurs sont rafraîchis automatiquement une seule fois pour appliquer le correctif immédiatement.
-
-Version 2.1.14
-- Retrait complet de la source intégrée TORR9, dont le site a fermé.
-- Les installations existantes désactivent puis suppriment automatiquement l’interrupteur TORR9, sa clé API et ses anciens réglages.
-- Les préréglages officiels 1080p et 4K ne peuvent plus recréer TORR9, même à partir d’une ancienne copie des codes paste.
