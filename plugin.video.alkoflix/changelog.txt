@@ -1,3 +1,8 @@
+Version 2.1.19
+- Correction de l'intégration AIOStreams : lorsqu'un manifest est configuré, alkoFlix utilise désormais directement l'endpoint Stremio /stream/...json au lieu de passer par l'API REST /api/v1/search.
+- Le délai d'attente AIOStreams passe de 7 à 20 secondes afin d'éviter les abandons prématurés sur les manifests plus lents.
+- Les configurations utilisant uniquement une URL API personnalisée conservent le comportement historique via /api/v1/search.
+
 Version 2.1.18
 - Correction de la détection de résolution utilisée par les tris et filtres des sources.
 - Les noms de trackers, providers ou équipes ne peuvent plus être interprétés comme une qualité vidéo : par exemple TR4KER ou H4KING ne déclenchent plus à tort une détection 4K.
