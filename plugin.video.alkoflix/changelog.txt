@@ -1,3 +1,9 @@
+Version 2.1.20
+- Correction de l'affichage AIOStreams dans le sélecteur : le libellé générique « DB » est remplacé par « AIO ».
+- Les résultats AIO affichent maintenant explicitement l'icône magnet pour les torrents/hashes et l'icône lien pour les flux directs.
+- Le tracker/site réel renvoyé par AIOStreams est conservé séparément et affiché dans la colonne source (C411, Torr9, YGG, WA, etc.) lorsque disponible.
+- Aucun changement au tri, aux filtres ni à l'ordre imposé par le manifest AIOStreams.
+
 Version 2.1.19
 - Correction de l'intégration AIOStreams : lorsqu'un manifest est configuré, alkoFlix utilise désormais directement l'endpoint Stremio /stream/...json au lieu de passer par l'API REST /api/v1/search.
 - Le délai d'attente AIOStreams passe de 7 à 20 secondes afin d'éviter les abandons prématurés sur les manifests plus lents.
