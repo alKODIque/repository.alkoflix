@@ -1,3 +1,29 @@
+Version 2.1.24
+- Correction du tri final lorsque la seconde couche de sources complète la qualité prioritaire : la provenance principale/secours ne peut plus repousser une meilleure résolution sous les résultats de la source principale.
+- En mode « En secours », un 4K/1080p/720p provenant des sources alkoFlix est replacé dans son vrai groupe de qualité selon les tris configurés; à critères équivalents seulement, le manifest principal reste devant.
+- Le comportement est symétrique en mode « Par défaut » : la qualité, la langue et les filtres « Trier en haut » restent prioritaires sur la provenance, puis alkoFlix départage les résultats équivalents avant les manifests secondaires.
+- Les limites « maximum par résolution » et « maximum total » respectent désormais strictement l'ordre final déjà trié et ne peuvent plus éliminer une qualité prioritaire au profit d'un résultat de la source principale.
+- La priorité Cloud reste confinée au même groupe de qualité/langue/filtre et au même niveau de source afin de ne plus casser le classement final.
+
+Version 2.1.23
+- Correction du déclenchement du second niveau de sources : il tient maintenant compte de la qualité prioritaire, et pas seulement du nombre total de liens.
+- En mode « En secours », si les manifests externes ne fournissent pas assez de résultats dans la qualité prioritaire (ex. 4K), les sources alkoFlix sont interrogées pour compléter cette résolution, même si de nombreux liens d'autres qualités sont déjà présents.
+- Le comportement est symétrique en mode « Par défaut » : les manifests externes peuvent compléter la qualité prioritaire lorsque les sources alkoFlix n'en fournissent pas assez.
+- Le nombre à compléter pour la qualité prioritaire respecte « Nombre maximum de résultats par résolution » (et le maximum total lorsqu'il est inférieur), quel que soit le critère principal de tri choisi.
+- Comet/Movix restent strictement des sources de secours et continuent de se déclencher uniquement lorsqu'il reste 2 liens affichables ou moins au total.
+
+Version 2.1.22
+- Priorité des sources rendue totalement symétrique : en mode « Par défaut », les sources alkoFlix sont interrogées et affichées avant les manifests externes; en mode « En secours », les manifests externes restent interrogés et affichés avant les sources alkoFlix.
+- Le second niveau n'est interrogé que lorsqu'il reste 2 liens affichables ou moins après filtres, dans les deux sens.
+- La priorité « Cloud en haut » reste active à l'intérieur de chaque niveau, mais ne peut plus faire passer une source secondaire devant une source principale.
+
+Version 2.1.21
+- Correction de la logique du mode « alkoFlix en secours » : les manifests externes sont interrogés et affichés en premier; les sources alkoFlix ne peuvent plus remonter devant eux lorsque les tris/filtres sont appliqués aux sources externes.
+- Les passages secondaires utilisent désormais un vrai seuil de secours : ils ne sont déclenchés que lorsqu'il reste 2 liens affichables ou moins après filtres. Le réglage « Nombre maximum de liens totaux » reste uniquement une limite d'affichage.
+- Comet et Movix configurés comme sources de secours ne sont appelés qu'en dernier, uniquement si 2 liens ou moins subsistent après les sources normales, quel que soit le mode alkoFlix.
+- Comet/Movix ne peuvent plus être simultanément source normale et source de secours : leur option de secours est ignorée et grisée lorsqu'ils sont activés dans les sources intégrées.
+- « Tester toutes les sources » force maintenant la prise en compte de Custom 1/2 configurés même lorsque leur interrupteur de source normale est désactivé.
+
 Version 2.1.20
 - Correction de l'affichage AIOStreams dans le sélecteur : le libellé générique « DB » est remplacé par « AIO ».
 - Les résultats AIO affichent maintenant explicitement l'icône magnet pour les torrents/hashes et l'icône lien pour les flux directs.
