@@ -1,3 +1,12 @@
+Version 2.1.25
+- Correctif Windows : la détection des connexions SQLite ouvertes ne parcourt plus aveuglément les objets Python, ce qui évite l’erreur « Could not find module db_file » provoquée par les chargeurs ctypes.
+- Refonte de la restauration de sauvegarde alkoFlix sous Windows afin d’éviter les fichiers grisés/cachés et les résidus temporaires après restauration.
+- settings.xml n’est plus remplacé physiquement pendant que Kodi est actif : les réglages sont désormais réappliqués via l’API de réglages Kodi, ce qui évite les conflits de fichiers et les attributs Windows indésirables.
+- navigator.db utilise maintenant un remplacement atomique direct sans création de copie .__restore_old_ ; en cas de verrouillage, le fichier local reste intact et le temporaire est supprimé.
+- favourites.db est retirée de la sauvegarde/restauration générale : les favoris continuent d’être gérés exclusivement par leur mécanisme alkoPastes séparé. Les anciennes sauvegardes qui contiennent encore favourites.db l’ignorent proprement.
+- Nettoyage automatique des anciens fichiers .__restore_tmp_ / .__restore_old_ et retrait des attributs Hidden/System éventuellement laissés sur settings.xml, navigator.db ou favourites.db sous Windows.
+- Les caches techniques restent non portables : ils sont vidés lors de la restauration puis recréés propres par alkoFlix au besoin.
+
 Version 2.1.24
 - Correction du tri final lorsque la seconde couche de sources complète la qualité prioritaire : la provenance principale/secours ne peut plus repousser une meilleure résolution sous les résultats de la source principale.
 - En mode « En secours », un 4K/1080p/720p provenant des sources alkoFlix est replacé dans son vrai groupe de qualité selon les tris configurés; à critères équivalents seulement, le manifest principal reste devant.
