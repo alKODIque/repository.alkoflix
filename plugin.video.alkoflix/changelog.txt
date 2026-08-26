@@ -1,3 +1,12 @@
+Version 2.1.26
+- Ajout du tracker privé V3X dans Sources > Trackers privés, sous TR4KER, avec saisie masquée de la clé API personnelle.
+- Intégration via l’API Torznab officielle V3X (films catégorie 2000, séries catégorie 5000) avec recherche par identifiants et repli texte strictement filtré.
+- La passkey V3X intégrée aux fichiers .torrent n’est jamais transmise au débrideur : alkoFlix utilise uniquement l’infohash/magnet Torznab propre lorsque celui-ci est exposé.
+- V3X participe au tri, aux filtres, au cache privé et à la réutilisation prudente des packs comme C411, TR4KER et YGGReborn.
+- Clarification dans Sources : « alkoPaste (AllDebrid seulement) » afin d’indiquer clairement que cette source fournit uniquement des liens AllDebrid.
+- Correction du respect des préférences Kodi pour les sous-titres lorsque Wyzie n’est pas utilisé : alkoFlix ne force plus une piste de sous-titres à la place du choix Kodi.
+- Amélioration du réglage Kodi « Langue d’origine » pour l’audio et les sous-titres : alkoFlix s’appuie sur la langue originale du média et privilégie la piste VO correspondante lorsqu’elle est disponible, avec repli prudent sur le choix Kodi lorsqu’elle ne l’est pas.
+
 Version 2.1.25
 - Correctif Windows : la détection des connexions SQLite ouvertes ne parcourt plus aveuglément les objets Python, ce qui évite l’erreur « Could not find module db_file » provoquée par les chargeurs ctypes.
 - Refonte de la restauration de sauvegarde alkoFlix sous Windows afin d’éviter les fichiers grisés/cachés et les résidus temporaires après restauration.
