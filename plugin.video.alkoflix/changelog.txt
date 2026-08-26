@@ -1,3 +1,15 @@
+Version 2.1.28
+- Correction de l'icône « Page suivante » dans les vues Landscape : une illustration 16:9 dédiée est maintenant fournie au skin au lieu de réutiliser l'icône carrée.
+- Le pack Coal peut fournir sa propre variante Landscape, avec repli automatique sur l'image intégrée à alkoFlix si elle est absente.
+
+Version 2.1.27
+- Ajout de la prise en charge automatique du pack d’icônes facultatif « Icônes alkoFlix - Coal » (resource.images.alkodicons.coal).
+- Lorsque le pack Coal est installé, les icônes des dossiers media et « Icones de menu » sont chargées depuis le pack sans modifier les fichiers internes d’alkoFlix.
+- Le retour aux icônes d’origine est automatique dès que le pack Coal n’est plus présent.
+- Repli sécurisé par fichier : si une image n’existe pas dans le pack, alkoFlix utilise immédiatement son icône intégrée afin d’éviter toute image manquante.
+- Le sélecteur d’icônes du menu personnalisé utilise lui aussi le pack Coal lorsqu’il est installé.
+- Les icônes personnalisées de menu restent enregistrées avec un chemin alkoFlix stable : elles basculent vers Coal à l’affichage et reviennent automatiquement à l’original si le pack est retiré.
+
 Version 2.1.26
 - Ajout du tracker privé V3X dans Sources > Trackers privés, sous TR4KER, avec saisie masquée de la clé API personnelle.
 - Intégration via l’API Torznab officielle V3X (films catégorie 2000, séries catégorie 5000) avec recherche par identifiants et repli texte strictement filtré.
