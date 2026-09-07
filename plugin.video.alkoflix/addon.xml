@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.1.28" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.1.31" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.addon.signals" />
         <import addon="resource.images.alkodicons.coal" version="1.0.0" optional="true" />
     </requires>

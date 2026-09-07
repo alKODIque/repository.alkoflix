@@ -1,3 +1,29 @@
+Version 2.1.31
+- Sources de secours configurables individuellement : alkoPaste, Movix, Wawacity, Comet, Free-Telecharger, Nyaa, C411, TR4KER, V3X, DRAUPNIRR et YGGReborn possèdent désormais chacun leur propre interrupteur. L’option est grisée lorsque la source normale correspondante est activée; lorsqu’elle est désactivée, elle peut être autorisée uniquement en secours et n’est interrogée que si 2 liens affichables ou moins subsistent après les sources normales.
+- Wawacity : seuls les liens 1fichier, Turbobit, Rapidgator et Vidoza sont désormais conservés; les hosters non pris en charge par AllDebrid (ex. DailyUploads, Uploady) sont ignorés avant le sélecteur.
+- Correction des players TMDb Helper pour les listes d’épisodes aplaties (calendrier, épisodes diffusés aujourd’hui, listes mélangeant plusieurs séries) : alkoFlix récupère désormais la saison et l’épisode directement depuis le ListItem Kodi lorsque les placeholders {season}/{episode} ne sont pas transmis par TMDb Helper.
+- Les placeholders TMDb Helper absents (notamment « _ ») sont désormais nettoyés avant le lancement afin d’éviter les erreurs de conversion et les boucles de lecture.
+- Les players Play, Select et Options utilisent le même mécanisme de récupération; les anciens JSON Options déjà installés restent pris en charge lorsqu’ils arrivent sans SxxExx.
+- Les nouveaux JSON transmettent aussi les identifiants d’épisode TMDb/IMDb/TVDb lorsqu’ils sont disponibles, pour faciliter les replis futurs sans modifier le fonctionnement normal des players.
+
+Version 2.1.30
+- Ajout de Wawacity dans Sources > Sources alkoFlix intégrées, juste sous Movix. La recherche et l’extraction des liens suivent le modèle Wacustom et utilisent le domaine dynamique déjà fourni par alkoPastes.
+- Dans le sélecteur de liens, Wawacity est affiché sous le libellé court « WAWA ».
+- Wawacity exploite directement les pages films/séries et les liens protégés dl-protect; AllDebrid les résout ensuite via le redirector déjà pris en charge par alkoFlix.
+- Wawacity respecte les tris/filtres alkoFlix, les limites de résultats et les règles de sécurité déjà appliquées aux sources intégrées.
+
+Version 2.1.29
+- Correction du sous-menu « Parce que vous avez regardé... » : les recommandations d'un documentaire (films ou séries) ne sont plus supprimées par les exclusions de genres des menus généraux.
+- Correction du classement/filtre de langue des trackers privés : une release EN, HUNSUB ou sans marqueur VF/MULTI/VOSTFR n'est plus considérée française par défaut. Le filtre « N'afficher que VF / VOSTFR » redevient strict et le tri de langue n'est plus faussé.
+- Correction globale du pipeline de résultats : les choix utilisateur de qualité, 3D et les filtres/priorités REMUX/BluRay/HEVC/HDR/Dolby Vision/AV1 s’appliquent désormais à toutes les sources traitées, sans être contournés par le flag technique bypass_filter.
+- NYAA interroge désormais directement le flux RSS officiel de nyaa.si (infoHash, taille et seeders), sans passer par TorrentsDB, afin d’éviter les erreurs 429 récurrentes de cet intermédiaire.
+- Correction des conditions d’activation des options « Comet en source de secours » et « Movix en source de secours » après l’ajout de DRAUPNIRR, afin qu’elles restent correctement liées à leur source respective.
+- Ajout du tracker privé DRAUPNIRR dans Sources > Trackers privés, juste sous V3X, avec saisie masquée de la passkey personnelle.
+- Intégration via l’API Torznab officielle DRAUPNIRR (Films 2000 / Séries 5000) en recherche texte ciblée pour respecter les paramètres documentés par le tracker.
+- La passkey et les liens .torrent personnalisés ne sont jamais transmis au débrideur : alkoFlix conserve uniquement l’infohash/magnet propre exposé par Torznab.
+- DRAUPNIRR participe au tri, aux filtres, au cache privé et à la réutilisation des packs comme les autres trackers privés intégrés.
+- Dans le sélecteur de liens, le tracker est affiché sous le libellé court « DRPNR ».
+
 Version 2.1.28
 - Correction de l'icône « Page suivante » dans les vues Landscape : une illustration 16:9 dédiée est maintenant fournie au skin au lieu de réutiliser l'icône carrée.
 - Le pack Coal peut fournir sa propre variante Landscape, avec repli automatique sur l'image intégrée à alkoFlix si elle est absente.
