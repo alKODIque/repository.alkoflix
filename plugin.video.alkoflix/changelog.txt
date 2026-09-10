@@ -1,3 +1,9 @@
+v2.1.86
+- Corrige la priorité visuelle entre « Vu » et « En cours » : un film marqué vu n'affiche plus un ancien anneau de progression.
+- Les films marqués vus sont exclus des listes « en cours » même si un point de reprise résiduel existe encore dans le cache.
+- Ajuste la progression des saisons ajoutée en v2.1.58 : WatchedProgress n'est exposé que pour une saison partiellement vue (1 à 99 %), afin qu'une saison terminée conserve le crochet « vu ».
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.1.85
 - Corrige « Définir la langue des métadonnées » : le sélecteur Français/Anglais est de nouveau fonctionnel.
 - Le choix met à jour la langue et son libellé, puis vide le cache de métadonnées afin que le changement soit pris en compte immédiatement.
