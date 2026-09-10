@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.1.31" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.1.85" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -28,7 +28,7 @@
         <news lang="fr">Voir le changelog complet via le menu Outils de logs</news>
     </extension>
 </addon>
-<addon id="resource.images.alkodicons.coal" name="Icônes alkoFlix - Coal" version="1.0.1" provider-name="Les alKODIques">
+<addon id="resource.images.alkodicons.coal" name="Icônes alkoFlix - Coal" version="1.0.2" provider-name="Les alKODIques">
     <extension point="kodi.resource.images" compile="false" type="icons" />
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>

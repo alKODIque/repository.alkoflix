@@ -1,3 +1,293 @@
+v2.1.85
+- Corrige « Définir la langue des métadonnées » : le sélecteur Français/Anglais est de nouveau fonctionnel.
+- Le choix met à jour la langue et son libellé, puis vide le cache de métadonnées afin que le changement soit pris en compte immédiatement.
+- Les anciens préréglages 1080p/4K ne peuvent plus réinjecter les réglages retirés du Catalogue alkoPaste, de Hydracker ou de l’ancien affichage de date du prochain épisode.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.84
+- Corrige le warning Kodi répété lié au réglage « alkoPaste en source de secours » après la suppression de l’ancien interrupteur du Catalogue alkoPaste.
+- Le réglage de secours référence de nouveau correctement « Source alkoPaste » et conserve son comportement actuel.
+- Aucun changement aux catalogues, suivis, listes, recommandations, sources ou lecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.83
+- Corrige les titres anglais dans les menus « Parce que vous avez regardé… » en résolvant le titre localisé TMDb selon la langue de métadonnées d’alkoFlix (fr-FR par défaut).
+- Les recommandations TMDb Films/Séries utilisent désormais la langue de métadonnées configurée au lieu d’un en-US codé en dur, avec une clé de cache distincte par langue.
+- Les anciennes fiches de métadonnées mises en cache dans une autre langue sont automatiquement reconstruites dans la langue actuellement choisie.
+- Conserve la logique de recommandation, le filtrage contextuel et les sections alkoPaste inchangés.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.82
+- Étend à TMDb le filtrage des listes dans Catalogue alkoPaste > Services > Films/Séries.
+- Une liste TMDb n'est affichée que si elle contient au moins un élément du type demandé réellement présent dans le Catalogue alkoPaste.
+- Le contrôle parcourt les pages de la liste jusqu'au premier élément compatible et conserve un repli prudent en cas d'erreur API.
+- Aucun changement au comportement MDBList déjà validé ni aux suivis, sources ou lecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.81
+- Corrige le filtrage des listes dans Catalogue alkoPaste > Services > Trakt/MDBList > Films/Séries.
+- Une liste est maintenant affichée seulement si elle contient au moins un élément du type demandé qui est réellement présent dans le Catalogue alkoPaste.
+- Trakt réutilise exactement le même contenu de liste mis en cache que lors de l’ouverture de la liste, afin d’éviter un écart entre la visibilité du dossier et son contenu réel.
+- MDBList applique la même vérification après ses compteurs Films/Séries, avec repli prudent en cas d’erreur réseau.
+- Aucun changement aux listes elles-mêmes, aux suivis, aux sources ni au lecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.80
+- Affiche désormais la description fournie par Trakt comme synopsis des listes dans alkoFlix, avec repli sur les informations existantes lorsqu’aucune description n’est fournie.
+- Affiche également la description MDBList lorsqu’elle est disponible.
+- Dans Catalogue alkoPaste > Services > Trakt/MDBList > Films/Séries, masque les listes qui ne contiennent aucun élément du type choisi afin d’éviter d’ouvrir des listes vides.
+- MDBList utilise ses compteurs Films/Séries natifs ; Trakt effectue un contrôle léger limité à 1 élément et mis en cache pendant 1 heure.
+- Aucun changement au contenu des listes, aux suivis, aux sources ni au lecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.79
+- Ajout des actions « Aimer la liste » / « Ne plus aimer la liste » au menu contextuel MDBList.
+- Les Listes aimées MDBList se mettent à jour après l'action.
+- Aucun changement aux suivis, catalogues, sources ou lecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.78
+- Ajoute « Listes aimées » dans Services > MDBList > Listes.
+- Ajoute « Listes aimées » aux accès MDBList depuis le Catalogue alkoPaste.
+- Utilise l'endpoint MDBList natif /lists/liked et conserve le filtrage Films/Séries existant.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.77
+- Le Catalogue alkoPaste devient une composante native d’alkoFlix et est désormais toujours disponible pour tous les utilisateurs.
+- Retire des paramètres l’option « Activer le Catalogue alkoPaste » : le catalogue n’est plus désactivable.
+- Les profils qui avaient précédemment désactivé le catalogue sont automatiquement migrés ; l’ancien réglage est supprimé au démarrage.
+- Le menu Catalogue alkoPaste est présent par défaut dès l’installation/mise à jour et reste indépendant de l’option Source alkoPaste.
+- La Source alkoPaste conserve son interrupteur actuel et peut toujours être activée ou désactivée séparément.
+- Le téléchargement initial et les mises à jour automatiques du Catalogue alkoPaste restent actifs même lorsque la Source alkoPaste est désactivée.
+- Conserve les actions existantes de mise à jour manuelle, suppression/reconstruction de la base et restauration des éléments du catalogue.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.76
+- Renomme le réglage calendrier en « Service de calendrier » et permet de choisir Trakt ou MDBList.
+- Le fournisseur sélectionné est utilisé par les calendriers génériques d’alkoFlix, notamment le calendrier des animés japonais.
+- Déplace « Calendrier » à la racine de Services > Trakt et Services > MDBList, au lieu de le laisser dans Historique de visionnage > Séries.
+- Utilise le libellé neutre « Calendrier » dans les deux services : aucune mention Trakt n’apparaît dans le menu MDBList.
+- Les calendriers ouverts depuis Services > Trakt et Services > MDBList restent explicitement liés à leur propre service, indépendamment du réglage global.
+- Conserve les réglages existants de plage, tri et focus sur aujourd’hui ainsi que les valeurs déjà enregistrées.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.75
+- Ajoute « Calendrier » dans Services > MDBList > Historique de visionnage > Séries.
+- Utilise l’endpoint personnel MDBList calendar/events et normalise les épisodes pour le rendu calendrier existant d’alkoFlix.
+- Réutilise les réglages calendrier existants (jours précédents/suivants, tri et focus sur aujourd’hui).
+- Le calendrier MDBList conserve les indicateurs de visionnage MDBList et utilise un cache court de 15 minutes pour limiter les appels API.
+- Aucun changement aux calendriers Trakt, aux catalogues, aux sources ou au player.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.74
+- Harmonise l’icône Replay dans Catalogue alkoPaste > Docus & Télé avec celle déjà utilisée pour Replay dans Contenu QC.
+- Aucun autre changement fonctionnel.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.73
+- Ajoute à la racine du Catalogue alkoPaste un dossier global « Vos suivis de lecture », placé juste après Service(s).
+- Ce dossier reprend, sans dupliquer leur logique, les suivis déjà existants de Films, Séries, Dessins animés, Docus & Télé, Concerts & Spectacles, Contenu QC et Animés japonais.
+- Ajoute juste après un dossier global « Favoris » organisé selon les mêmes grandes sections du catalogue.
+- Les favoris de Docus & Télé regroupent désormais Films, Séries et Replay afin de refléter le contenu réel du dossier alkoPaste.
+- Ajoute le dossier Favoris manquant à Concerts & Spectacles, séparé en Concerts et Spectacles.
+- Aucun changement aux moteurs de suivi, aux sources, au scraping ou au player.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.72
+- Réorganise Services > TMDb pour supprimer l’affichage à plat Films/Séries.
+- Regroupe la Liste de suivi, les Favoris, les Listes et les Recommandations dans leurs propres dossiers.
+- Chaque dossier Liste de suivi, Favoris et Recommandations sépare désormais Films et Séries.
+- Le dossier Listes conserve les listes personnelles TMDb sans ajouter de fonctions que TMDb ne fournit pas.
+- Aucun changement au suivi, aux catalogues, aux sources ou au player.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.71
+- Réorganise Services > MDBList sur le même modèle que le dossier Trakt.
+- Regroupe Mes listes, Listes populaires et Recherche de listes dans un dossier « Listes ».
+- Regroupe les éléments liés au suivi dans « Historique de visionnage », séparé en Films et Séries.
+- Ajoute dans l'historique MDBList : Films en cours, Films vus récemment, Vos séries en cours, Séries vues récemment, Épisodes en cours, Prochain épisode et Séries abandonnées.
+- Conserve à la racine MDBList uniquement Liste de suivi, Favoris, Collection, Listes, Historique de visionnage et Informations du compte.
+- Aucun changement à la logique de suivi, aux catalogues, aux sources ou au player.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.70
+- Corrige « Prochain épisode » lorsque MDBList est le fournisseur de visionnage.
+- Utilise désormais l'endpoint natif MDBList /upnext au lieu de reconstruire le prochain épisode depuis le dernier épisode vu.
+- Respecte toujours les filtres de contexte TMDb et alkoPaste ainsi que les séries abandonnées.
+- Ajoute un cache très court partagé entre les sous-menus afin de limiter les appels API MDBList, invalidé après une modification du suivi.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.69
+- Le dossier alkoPaste « Concerts & Spectacles » réutilise désormais l’icône historique de « Spectacles ».
+- Aucun changement fonctionnel aux catalogues, suivis ou recommandations.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.68
+- Regroupe les sections alkoPaste « Concerts » et « Spectacles » dans un dossier unique « Concerts & Spectacles ».
+- Les deux catalogues restent indépendants à l'intérieur du dossier.
+- « Vos suivis de lecture » propose désormais Concerts / Spectacles / Combiné.
+- La vue Combiné réunit uniquement les contenus en cours présents dans les deux sections alkoPaste.
+- « Parce que vous avez regardé... » reprend le même découpage Concerts / Spectacles / Combiné.
+- Migre automatiquement les anciennes entrées racine Concerts/Spectacles vers le nouveau dossier parent.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.67
+- Réorganise le catalogue alkoPaste : Replay est désormais placé dans le dossier « Docus & Télé ».
+- Renomme le dossier alkoPaste « Documentaires » en « Docus & Télé ».
+- Le dossier conserve trois accès distincts : Films, Séries et Replay.
+- « Vos suivis de lecture » regroupe désormais les documentaires et le Replay dans la même vue Docus & Télé.
+- « Parce que vous avez regardé... » utilise le même périmètre combiné Documentaires + Replay.
+- Les sections sources restent séparées : aucune fusion de catalogue ou de favoris n'est effectuée.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.66
+- Déploie « Parce que vous avez regardé... » dans tous les tiroirs de contenu du Catalogue TMDb.
+- Les recommandations respectent désormais le contexte éditorial : Famille, Animation, Anime japonais, Documentaires, Téléréalité, Talk-shows, Actualités, etc.
+- Les tiroirs mixtes proposent Films / Séries / Combiné, sur le même modèle que « Vos suivis de lecture ».
+- Ajoute « Parce que vous avez regardé... » dans chaque section et dossier pertinent du catalogue alkoPaste.
+- Dans alkoPaste, seuls les médias présents dans la section peuvent servir de point de départ et seules les recommandations également présentes dans cette section sont affichées.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.65
+- Correctif MDBList : Prochain épisode s’affiche de nouveau dans les dossiers Vos suivis de lecture.
+- Correctif MDBList : Séries abandonnées est de nouveau disponible dans les suivis contextuels TMDb.
+- Le filtrage TMDb des prochains épisodes et séries abandonnées est désormais appliqué sur la métadonnée déjà chargée, sans préfiltrage destructif.
+
+2.1.64
+- Aligne tous les menus TMDb sur le modèle « Vos suivis de lecture » déjà validé dans le catalogue alkoPaste.
+- Les racines mixtes Famille, Dessins animés, Docus & Télé et Animés japonais ouvrent désormais Films / Séries / Combiné.
+- Ajoute « Vos suivis de lecture » dans chaque sous-menu TMDb Films/Séries pertinent (Famille, Animation, Anime et sous-catégories Docus).
+- Applique le contexte du menu à Films/Séries terminés, séries en cours, continuer à regarder, épisodes en cours, prochain épisode et séries abandonnées.
+- Évite les débordements entre catégories (ex. Téléréalité ne ramène plus Talk-shows/Actualités dans ses suivis).
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+2.1.63
+- Sépare strictement les actions de suivi selon le fournisseur de visionnage actif.
+- « Abandonné » n’apparaît dans Gestion Trakt que si Trakt est le fournisseur actif.
+- « Abandonné » n’apparaît dans Gestion MDBList que si MDBList est le fournisseur actif.
+- Les fonctions indépendantes du visionnage (collection, liste de suivi, favoris et listes personnelles) restent disponibles pour les services connectés.
+
+v2.1.62
+- Corrige le gestionnaire MDBList : les actions Ajouter/Retirer utilisent désormais « Liste MDBList » et non « Liste Trakt ».
+- Vérifie la séparation visuelle des gestionnaires : Gestion Trakt reste Trakt uniquement, Gestion MDBList reste MDBList uniquement.
+- Aucun changement à la logique de suivi ni aux actions des fournisseurs.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.61
+- Aligne le gestionnaire MDBList sur Trakt : Collection, Liste de suivi, Favoris, ajout/retrait des listes personnelles et état « Abandonné ».
+- Ajoute l'action MDBList « Abandonné » via sync/dropped et sync/dropped/remove, avec mise à jour immédiate du cache local.
+- Ajoute « Séries abandonnées » au fournisseur de visionnage alkoFlix local, avec stockage persistant dans watched.db.
+- Exclut aussi les séries abandonnées locales des séries en cours, reprises, épisodes en cours et prochains épisodes.
+- Ajoute la gestion MDBList dans les menus contextuels d'épisodes afin que les vues « Vos suivis de lecture » offrent les mêmes actions que Trakt.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.60
+- Renomme les dossiers « Vos visionnages en cours » en « Vos suivis de lecture » partout dans alkoFlix.
+- Place « Séries abandonnées » en dernière position dans les dossiers de suivi des séries.
+- Retire la date colorée devant les titres dans les listes « Prochain épisode » ; les calendriers conservent leur affichage daté.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.59
+- Corrige l'action Trakt « Abandonné » : envoi de tous les identifiants disponibles au lieu de dépendre uniquement de l'IMDb.
+- Mise à jour immédiate du cache local Dropped après succès Trakt : la série disparaît de « Vos séries en cours » et apparaît aussitôt dans « Séries abandonnées ».
+- Ajoute une notification de réussite/échec et évite le rechargement distant immédiat susceptible de récupérer un cache Trakt encore ancien.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.58
+- Ajout de la progression de visionnage sur les dossiers Saison (WatchedProgress), compatible avec les indicateurs des skins comme Arctic Fuse 3.
+
+v2.1.57
+- Renomme « Historique de visionnage » en « Films terminés » / « Séries terminées ».
+- « Séries terminées » affiche uniquement les séries dont tous les épisodes diffusés sont vus.
+- « Vos séries en cours » continue d'exclure les séries terminées et conserve la navigation Série > Saison > Épisodes.
+- Aucun changement au comportement aplati de « Continuer à regarder ».
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.56
+- Regroupe les suivis Films/Séries existants dans des dossiers sans réécrire leurs listes.
+- « Vos séries en cours » conserve la navigation Série > Saison > Épisodes.
+- « Continuer à regarder » conserve l'ancien affichage aplati de « Poursuivre la lecture ».
+- Ajoute « Séries abandonnées » pour le fournisseur actif Trakt ou MDBList.
+- MDBList : synchronisation locale du statut Dropped via last_activities/sync/dropped, sans appel supplémentaire au repos.
+- Catalogue alkoPaste : les dossiers de suivi restent limités aux IDs de leur section.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.54
+- Correction de l'erreur d'extension affichée juste avant le démarrage d'une lecture native introduite en v2.1.53.
+- Le worker de suivi de lecture est désormais lancé dans le contexte officiel plugin.video.alkoflix au lieu d'être exécuté comme un script Python sans identifiant d'addon.
+- Le nouveau chemin de résolution native v2.1.53 reste inchangé : conservation du MediaType et retour propre à la liste après Stop.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.53
+- Nouveau chemin de lecture natif : films/épisodes sont résolus par Kodi via un vrai ListItem IsPlayable.
+- Le suivi alkoFlix (Trakt, progression, sous-titres, Up Next) est détaché du handle de navigation afin de préserver MyVideoNav et MediaType après Stop.
+- Aucun changement aux listes/cache/anti-doublon.
+
+v2.1.52
+- Retour intégral à la base de navigation stable v2.1.47 après les essais 2.1.48 à 2.1.51.
+- Retrait complet de la logique expérimentale EpisodeRestore / anti-doublon qui pouvait provoquer un menu vide ou un retour vers Fichiers Kodi après Stop.
+- Aucun changement au Player, au sélecteur de sources ou aux widgets.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.47
+- Retour volontaire à la base fonctionnelle v2.1.39 pour restaurer la navigation normale après arrêt de lecture.
+- Suppression de tous les essais de lancement/resolve introduits en v2.1.40 à v2.1.46.
+- Le correctif MediaType des versions expérimentales est retiré temporairement afin de privilégier la stabilité du retour aux listes.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.39
+- Correctif ciblé du MediaType après Stop : suppression des fermetures globales Dialog.Close(all,true) dans le trajet normal Sélecteur -> Player.
+- _kill_progress_dialog() ne ferme plus toute la pile Kodi lorsque progress_dialog est absent (cas normal avec le chargement plein écran désactivé).
+- Après démarrage vidéo, alkoFlix ferme uniquement son busy/progress dialog au lieu de détruire les dialogues du skin/Kodi.
+- Conservation du DBType movie/episode sur les lignes du sélecteur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.38
+- Correctif de stabilité après Stop : retrait de la fermeture globale Dialog.Close(all,true) et de l’attente forcée de la pile GUI ajoutées en v2.1.37.
+- Conservation du correctif efficace du media type : les lignes du sélecteur de sources gardent le vrai DBType du média (movie/episode).
+- Le sélecteur revient à son cycle de fermeture natif (WindowXMLDialog.close) avant la lecture, sans forcer la destruction des autres dialogues Kodi/skin.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.37
+- Correction ciblée du media type après Stop : les lignes du sélecteur de sources héritent désormais du vrai DBType du média (movie/episode) au lieu de rester à None.
+- Le sélecteur XML est fermé et la fenêtre vidéo d'origine est laissée se stabiliser avant l'appel à Player.play(), afin qu'il ne puisse plus devenir le dernier contexte GUI mémorisé par le skin.
+- Retrait du Container.Refresh/Container.Update automatique après Stop introduit en 2.1.35/2.1.36 : cette réparation tardive pouvait provoquer une seconde transition de vue sans corriger la cause.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.36
+- Correctif retour après Stop : capture du vrai contexte média avant l’ouverture du sélecteur de sources.
+- Restauration renforcée de Container.Content et ListItem.DBType pour éviter le retour à None/vue générique.
+- Repli ciblé par reconstruction du dossier courant si Container.Refresh ne suffit pas.
+
+Version 2.1.35
+- Correction du retour d’affichage après l’arrêt d’une lecture : alkoFlix mémorise désormais le Container.Content et le dossier média actifs avant le démarrage du player.
+- Après Stop/fin de lecture, le conteneur n’est reconstruit que si Kodi/skin a réellement perdu son type (movies, tvshows, seasons, episodes ou videos), ce qui évite le retour à une vue générique/None.
+- Le mécanisme est limité aux listes média internes d’alkoFlix : aucun rafraîchissement n’est forcé sur Home, les widgets externes ou après navigation vers une autre fenêtre/dossier.
+- Protection des enchaînements/Up Next : aucune restauration n’est déclenchée si une nouvelle vidéo est déjà active.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+Version 2.1.34
+- Correction du menu racine pouvant se vider après la migration vers « Catalogue TMDb » : la reconstruction à vide n'est désormais exécutée qu'une seule fois lorsque l'ancien cache de racine est réellement détecté.
+- Ajout d'un filet de sécurité dans la synchronisation des menus : une liste native non personnalisée ne peut plus rester vide à cause d'un cache intermédiaire déjà marqué comme à jour.
+- Correction de l’icône du dossier « Catalogue TMDb » : utilisation de l’icône de menu TMDb au lieu de l’ancien logo du dossier media, afin de respecter automatiquement le pack resource.images.alkodicons.coal lorsqu’il est installé.
+- Migration transparente des installations v2.1.32/v2.1.33 : l’entrée native Catalogue TMDb déjà enregistrée est corrigée sans modifier les raccourcis ou copies créés volontairement via l’éditeur de menus.
+- Le repli vers l’icône intégrée alkoFlix reste actif si Coal n’est pas installé; compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+Version 2.1.33
+- Refonte des menus « Vos visionnages en cours » selon le contexte : Films et Séries généraux excluent désormais les catégories dédiées (documentaires, animation, animés japonais, télé-réalité, talk-shows, actualités, etc.) avant pagination.
+- Docus & Télé, Dessins animés et Animés japonais disposent maintenant d’un menu « Vos visionnages en cours » combinant films et séries, avec séparation correcte des animations japonaises et non japonaises.
+- Le Catalogue alkoPaste reprend la même organisation : Films/Séries sont filtrés et limités aux IDs réellement présents dans leur section; les dossiers Documentaires, Dessins animés et Animés japonais proposent une liste combinée strictement issue de leurs sections alkoPaste.
+- Contenu QC possède un « Vos visionnages en cours » combiné Films + Séries limité aux IDs TMDb présents dans qc_movie/qc_series, sans filtrage de genre.
+- Ajout à la racine d’un menu global « Vos visionnages en cours » avec Films, Séries et Combiné, sans filtre éditorial, toujours basé sur le service de suivi actif (alkoFlix, Trakt ou MDBList).
+- Les filtres contextuels sont appliqués avant pagination afin de conserver des pages cohérentes; compatibilité préservée avec Kodi 21 Omega et Kodi 22 Piers.
+
+Version 2.1.32
+- Réorganisation du menu racine : Films, Séries, Docus & Télé, Famille, Dessins animés et Animés japonais sont désormais regroupés sous un nouveau dossier « Catalogue TMDb » utilisant l’icône TMDb.
+- Les routes historiques MovieList, TVShowList, DocumentaryList, FamilyList, AnimationList et AnimeList restent inchangées afin de préserver les widgets de skins, favoris Kodi et raccourcis personnalisés existants.
+- Migration douce des menus personnalisés : l’ordre et les retraits appliqués aux six anciennes entrées de la racine sont transposés dans Catalogue TMDb lorsque possible, tandis que les copies/raccourcis ajoutés volontairement via l’éditeur restent à leur emplacement actuel.
+- Catalogue alkoPaste et le catalogue ajouté via manifest externe sont placés juste après Catalogue TMDb au début du menu racine pour rendre les différentes bibliothèques plus faciles à repérer.
+- L’éditeur de menus connaît désormais Catalogue TMDb comme destination distincte tout en conservant l’accès aux six listes historiques pour les personnalisations avancées.
+
 Version 2.1.31
 - Sources de secours configurables individuellement : alkoPaste, Movix, Wawacity, Comet, Free-Telecharger, Nyaa, C411, TR4KER, V3X, DRAUPNIRR et YGGReborn possèdent désormais chacun leur propre interrupteur. L’option est grisée lorsque la source normale correspondante est activée; lorsqu’elle est désactivée, elle peut être autorisée uniquement en secours et n’est interrogée que si 2 liens affichables ou moins subsistent après les sources normales.
 - Wawacity : seuls les liens 1fichier, Turbobit, Rapidgator et Vidoza sont désormais conservés; les hosters non pris en charge par AllDebrid (ex. DailyUploads, Uploady) sont ignorés avant le sélecteur.
