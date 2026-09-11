@@ -1,3 +1,34 @@
+v2.1.91
+- Corrige l’affichage des épisodes non diffusés depuis les dossiers de suivi de lecture : le filtre « masquer les éléments vus » ne supprime plus les épisodes futurs.
+- Le réglage « Inclure les épisodes non diffusés » est maintenant respecté dans ces menus, avec le même affichage cyan que dans les listes normales.
+- Préserve la distinction introduite en v2.1.90 entre série « à jour » et série réellement terminée.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.90
+- Corrige « Séries terminées » : une série n'y apparaît désormais que si TMDb indique réellement un statut Ended/Canceled et que tous les épisodes diffusés sont vus.
+- Une série encore en diffusion reste dans « Vos séries en cours » même lorsque tous les épisodes actuellement disponibles ont été visionnés.
+- Distingue désormais une série simplement « à jour » d'une série réellement terminée.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.89
+- Corrige « Vos suivis de lecture » à la racine du Catalogue TMDb : le dossier regroupe désormais les raccourcis filtrés Films, Séries, Docus & Télé, Famille, Dessins animés et Animés japonais.
+- Chaque raccourci réutilise exactement le même filtre de suivi que celui présent dans la section TMDb correspondante.
+- Le suivi global situé à la racine générale d’alkoFlix reste inchangé et continue d’afficher l’ensemble des lectures sans découpage éditorial.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.88
+- Ajoute « Vos suivis de lecture » à la racine du Catalogue TMDb, juste avant « Parce que vous avez regardé… ».
+- Ajoute « Parce que vous avez regardé… » à la racine du Catalogue alkoPaste.
+- Les recommandations de la racine alkoPaste restent strictement limitées aux médias présents dans l'ensemble du Catalogue alkoPaste, toutes sections confondues.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.87
+- Corrige le raccourci racine « Vos suivis de lecture » : Films, Séries et Combiné utilisent désormais un suivi réellement global, sans filtre éditorial du Catalogue TMDb.
+- Les films d’animation, documentaires, téléfilms et autres catégories auparavant exclues du tiroir Films racine sont maintenant inclus lorsqu’ils font partie du suivi de lecture.
+- Même correction préventive pour les Séries : le raccourci racine n’exclut plus documentaires, animation, actualités, téléréalité ou talk-shows.
+- Les raccourcis « Vos suivis de lecture » situés à l’intérieur des menus Films, Séries, Famille, Docus, Animation, Anime et alkoPaste conservent leurs filtres contextuels respectifs.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.1.86
 - Corrige la priorité visuelle entre « Vu » et « En cours » : un film marqué vu n'affiche plus un ancien anneau de progression.
 - Les films marqués vus sont exclus des listes « en cours » même si un point de reprise résiduel existe encore dans le cache.
