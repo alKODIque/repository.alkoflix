@@ -1,3 +1,9 @@
+v2.1.97
+- Préréglages officiels 1080p/4K : alkoPaste et Zone-Telechargement deviennent les deux sources principales activées.
+- Préréglages officiels 1080p/4K : Wawacity et Comet deviennent les deux sources de secours activées ; Movix n'est plus activée en secours par ces préréglages.
+- Aucun autre comportement ni réglage de l'addon n'est modifié.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.1.96
 - Movix : le libellé et la source alkoFlix restent « Movix », mais le moteur de récupération utilise désormais le catalogue Idrix (Rentry) afin de suivre la nouvelle structure de liens.
 - Movix : l’URL dynamique du paste alkoPastes peut maintenant pointer directement vers l’index Idrix/Rentry ; pour les films, alkoFlix suit automatiquement le lien vers l’index Films depuis l’index Séries.
