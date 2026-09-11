@@ -1,3 +1,42 @@
+v2.1.96
+- Movix : le libellé et la source alkoFlix restent « Movix », mais le moteur de récupération utilise désormais le catalogue Idrix (Rentry) afin de suivre la nouvelle structure de liens.
+- Movix : l’URL dynamique du paste alkoPastes peut maintenant pointer directement vers l’index Idrix/Rentry ; pour les films, alkoFlix suit automatiquement le lien vers l’index Films depuis l’index Séries.
+- Movix : recherche ciblée du média dans l’index puis récupération des liens 1fichier de sa fiche, avec prise en charge des sous-pages Rentry/TextUp et, lorsque disponible, PrivateBin Idrix.
+- Movix : cache court des pages Idrix, chargement parallèle limité des sous-pages et repli automatique rentry.co/rentry.org pour éviter de ralentir inutilement le sélecteur.
+- Zone-Telechargement : optimisations de la v2.1.95 conservées sans autre modification.
+- Compatibilité Kodi 21 Omega (Python 3.8) et Kodi 22 Piers préservée.
+
+v2.1.95
+- Movix : restauration complète du comportement de la v2.1.92 ; les expérimentations réseau/décodage des v2.1.93-v2.1.94 sont retirées.
+- Zone-Telechargement : chargement parallèle des pages de recherche, qualités et saisons, avec cache HTTP pendant une même recherche.
+- Zone-Telechargement : sessions HTTP persistantes par thread afin de réduire le coût des connexions répétées vers le même domaine.
+- Zone-Telechargement : résolution Zoneurs accélérée (URL finale directe détectée avant requête, doublons résolus une seule fois, délai court réservé aux intermédiaires).
+- « Tester toutes les sources » conserve le diagnostic détaillé introduit en v2.1.94.
+- Compatibilité Kodi 21 Omega (Python 3.8) et Kodi 22 Piers préservée.
+
+v2.1.94
+- Zone-Telechargement : correction de compatibilité Kodi 21 Omega/Python 3.8 (suppression des appels à str.removeprefix introduits par erreur lors de l’adaptation Wastream).
+- Movix et Zone-Telechargement : requêtes HTTP alignées davantage sur Wastream avec User-Agent navigateur et en-têtes source plus complets afin d’éviter les rejets silencieux de certains domaines/API.
+- Zone-Telechargement : tentative automatique de la variante www/non-www avant de conclure à une panne de domaine et de forcer l’actualisation alkoPastes.
+- « Tester toutes les sources » : Movix, Zone-Telechargement, Wawacity et Free-Telecharger sont maintenant ajoutés explicitement au test comme filet de sécurité et chaque source testée est inscrite clairement dans kodi.log avec son résultat.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.93
+- Movix : délai maximal de décodage ramené à 2 secondes par lien et concurrence alignée sur Wastream afin qu'un hébergeur lent ne bloque plus inutilement l'ouverture du sélecteur.
+- Zone-Telechargement : actualisation forcée et unique de l'URL dynamique alkoPastes lorsqu'un domaine ne répond plus, puis reprise automatique de la requête sur le nouveau domaine.
+- Zone-Telechargement : résolution parallèle portée à 16 liens et canonicalisation des miroirs Rapidgator/Turbobit utilisés par Zoneurs avant passage au débrideur.
+- Zone-Telechargement reste désactivée par défaut, avec son option de source de secours indépendante et les mêmes tris/filtres que les autres sources alkoFlix.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.1.92
+- Movix : décodage des liens en parallèle afin de réduire fortement le temps de recherche lorsqu'une fiche contient plusieurs hébergeurs.
+- Movix : construction de l'API fiabilisée (gestion correcte de www) et rafraîchissement forcé de l'URL dynamique alkoPastes si le domaine courant ne répond plus.
+- Movix : correspondance IMDb rendue prioritaire et stricte lorsqu'un IMDb ID est disponible afin de limiter les faux positifs.
+- Ajout de Zone-Telechargement dans les sources alkoFlix intégrées, désactivée par défaut, avec option de source de secours indépendante.
+- Zone-Telechargement : recherche par catégories, validation titre/année, navigation des qualités/saisons, filtrage de l'épisode demandé et résolution parallèle des liens Zoneurs vers l'hébergeur final.
+- Zone-Telechargement utilise le flux d'URL dynamiques alkoPastes et passe dans les mêmes tris, filtres, limites, dédoublonnages et règles de sécurité que les autres sources intégrées.
+- Références relatives des réglages « sources de secours » recalculées après l'ajout de la nouvelle source pour préserver leur liaison exacte sous Kodi Omega et Piers.
+
 v2.1.91
 - Corrige l’affichage des épisodes non diffusés depuis les dossiers de suivi de lecture : le filtre « masquer les éléments vus » ne supprime plus les épisodes futurs.
 - Le réglage « Inclure les épisodes non diffusés » est maintenant respecté dans ces menus, avec le même affichage cyan que dans les listes normales.
