@@ -1,3 +1,18 @@
+v2.2.20
+- « Continuer à regarder » n'affiche désormais que des épisodes déjà diffusés et disponibles maintenant, quel que soit le fournisseur de suivi (alkoFlix/local, Trakt ou MDbList).
+- Le réglage global « Afficher les épisodes non diffusés » continue de s'appliquer aux menus normaux, mais ne réinjecte plus d'épisodes futurs dans « Continuer à regarder » ni dans la partie séries de « Combiné ».
+
+2.2.19
+- « Continuer à regarder » est désormais strictement défini de la même façon pour alkoFlix/local, Trakt et MDbList : uniquement les séries ayant au moins un épisode déjà diffusé et non vu.
+- Une série dont tous les épisodes actuellement diffusés sont vus est retirée de « Continuer à regarder » et donc de « Combiné », même si elle est toujours en diffusion ou possède des épisodes futurs.
+- Le réglage d'affichage des épisodes non diffusés reste inchangé et n'influence pas l'éligibilité à « Continuer à regarder ».
+- « Séries vues récemment » et les autres suivis restent inchangés.
+
+2.2.18
+- Suivi local alkoFlix uniquement : « Continuer à regarder » retire désormais une série lorsque tous les épisodes diffusés sont vus, sauf si une reprise réelle est active.
+- Trakt et MDbList : comportement de suivi strictement inchangé par rapport à la 2.2.17.
+- « Séries en cours » reste inchangé : une série encore diffusée peut y rester lorsqu'elle est à jour.
+
 2.2.17
 - Services / Trakt et MDbList : « Séries vues récemment » utilise désormais exactement la même action que « Vos suivis de lecture / Séries vues récemment », afin de conserver le même contenu et le même ordre. Aucun changement au moteur de suivi.
 
