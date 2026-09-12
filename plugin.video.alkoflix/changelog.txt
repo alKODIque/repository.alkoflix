@@ -1,3 +1,21 @@
+2.2.17
+- Services / Trakt et MDbList : « Séries vues récemment » utilise désormais exactement la même action que « Vos suivis de lecture / Séries vues récemment », afin de conserver le même contenu et le même ordre. Aucun changement au moteur de suivi.
+
+v2.2.15
+- Vos suivis de lecture / Séries : « Vos séries en cours » est renommé « Séries vues récemment » partout, sans changement de logique, de tri, de filtre ou de fournisseur.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.14
+- Services Trakt/MDbList : le dossier « Vos séries en cours » est renommé « Continuer à regarder » sans aucun changement de logique, de tri ou de contenu.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.13
+- Correctif ciblé du menu Combiné : Films en cours + Continuer à regarder restent inchangés et sont fusionnés par dernière activité, film ou série sans distinction.
+
+v2.2.12
+- Combiné regroupe directement les dossiers existants « Films en cours » et « Continuer à regarder » (séries), sans modifier leur logique, leur fournisseur ni leur ordre.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.11
 - Consolidation de la branche 2.2.x sur le comportement de lecture retenu et stable.
 - Fermer le sélecteur de sources avec Retour reste une annulation normale, sans message Kodi « Échec de lecture ».
