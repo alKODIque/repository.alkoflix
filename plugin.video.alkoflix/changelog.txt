@@ -1,3 +1,8 @@
+v2.2.21
+- Catalogue TMDb : correction complète du mapping des dossiers « Vos suivis de lecture » pour les films. « Films terminés » reçoit désormais le même contexte éditorial que « Continuer à regarder ».
+- Les suivis TMDb natifs sont remappés automatiquement vers le bon contexte (Films, Famille, Dessins animés, Animés japonais, Docus & Télé et sous-sections), y compris pour les menus déjà enregistrés dans le cache navigateur.
+- Les raccourcis personnalisés restent inchangés. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.20
 - « Continuer à regarder » n'affiche désormais que des épisodes déjà diffusés et disponibles maintenant, quel que soit le fournisseur de suivi (alkoFlix/local, Trakt ou MDbList).
 - Le réglage global « Afficher les épisodes non diffusés » continue de s'appliquer aux menus normaux, mais ne réinjecte plus d'épisodes futurs dans « Continuer à regarder » ni dans la partie séries de « Combiné ».
