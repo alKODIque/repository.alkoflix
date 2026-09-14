@@ -1,3 +1,53 @@
+v2.2.28
+- Catalogues TMDb et alkoPaste : les dossiers de listes Trakt, MDBList et TMDb Lists respectent désormais strictement la séparation Films / Séries.
+- Les listes qui ne contiennent aucun média du type demandé sont masquées, afin d’éviter les dossiers vides après ouverture.
+- Trakt : Mes listes, Listes aimées, Listes tendances et Listes populaires appliquent le filtre avant la pagination.
+- MDBList : Mes listes, Listes aimées et Listes populaires appliquent le même comportement que Trakt.
+- TMDb Lists : Mes listes applique également la séparation Films / Séries et masque les listes vides.
+- Pagination : le filtrage est effectué avant le découpage des pages, afin de respecter exactement le nombre d’items par page configuré dans alkoFlix.
+- « Page suivante » reste forcé au bas des dossiers de listes, y compris pour TMDb Lists. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.27
+- Trakt : les entrées « Page suivante » restent désormais toujours au bas des dossiers de listes et du contenu des listes, même lorsque Kodi applique un tri alphabétique.
+- MDBList : même comportement que Trakt pour « Page suivante ».
+- Le tri et l'ordre des autres éléments restent inchangés. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.26
+- Catalogue alkoPaste : les comptes Trakt, MDBList et TMDb connectés sont désormais affichés directement à la racine ; le dossier intermédiaire « Service(s) » est supprimé.
+- La structure interne des comptes alkoPaste reste inchangée : chaque compte ouvre Films puis Séries, avec le filtrage catalogue alkoPaste existant.
+- Catalogue TMDb : les comptes Trakt, MDBList et TMDb connectés apparaissent également directement à la racine.
+- Chaque compte du Catalogue TMDb est divisé en Films et Séries et expose les listes/fonctions du service sur le catalogue TMDb complet.
+- Les comptes apparaissent et disparaissent dynamiquement selon leur état de connexion. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.25
+- Catalogue TMDb : ajout des raccourcis Personnes, Recherche et Favoris à la racine du catalogue.
+- Ces trois raccourcis sont des copies strictes de ceux de la racine alkoFlix : mêmes routes, mêmes icônes et même comportement.
+- Vos suivis de lecture était déjà présent dans Catalogue TMDb et reste inchangé.
+- Les raccourcis d'origine restent également présents à la racine alkoFlix.
+
+v2.2.24
+- Catalogue TMDb > Films : retrait du dossier « Listes » lié aux fournisseurs de services connectés.
+- Catalogue TMDb > Séries : retrait du même dossier « Listes ».
+- Les listes et fonctions des fournisseurs restent disponibles dans Service(s) ; aucun changement aux suivis de lecture ni au Catalogue alkoPaste.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.23
+- Catalogue alkoPaste > Contenu QC : Docus & Télé renomme ses sous-menus en « Films documentaire », « Séries documentaire » et « Émissions télé ».
+- Les petites branches QC Docus & Télé et Spectacles et Humour n'affichent plus « Parce que vous avez regardé ».
+- Films documentaire : retrait de « Films du moment », « Tendances de la semaine » et « Listes thématiques ».
+- Séries documentaire : retrait de « Séries en diffusion », « Séries tendances cette semaine » et « Listes thématiques ».
+- Émissions télé : retrait de « Séries tendances cette semaine » et « Listes thématiques ».
+- Spectacles et Humour : retrait de « Tendances de la semaine » et « Listes thématiques ».
+- Aucun changement au classement QC, aux suivis de lecture existants ni au catalogue TMDb. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.22
+- Catalogue alkoPaste uniquement : refonte complète de Contenu QC en quatre entrées : Films, Séries, Docus & Télé, Spectacles et Humour.
+- Films QC exclut désormais les documentaires ainsi que tous les titres de la liste « Spectacles et humour » dans l’ensemble de ses sous-menus.
+- Séries QC exclut désormais les documentaires, téléréalités, talk-shows et actualités dans l’ensemble de ses sous-menus.
+- Docus & Télé QC regroupe Films documentaires, Séries documentaires et Replay ; Replay rassemble Téléréalité, Talk-show et Actualités dans un seul menu.
+- Les suivis de lecture QC existants sont conservés sans créer de nouvelles séparations. Aucun changement au catalogue TMDb.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.21
 - Catalogue TMDb : correction complète du mapping des dossiers « Vos suivis de lecture » pour les films. « Films terminés » reçoit désormais le même contexte éditorial que « Continuer à regarder ».
 - Les suivis TMDb natifs sont remappés automatiquement vers le bon contexte (Films, Famille, Dessins animés, Animés japonais, Docus & Télé et sous-sections), y compris pour les menus déjà enregistrés dans le cache navigateur.
