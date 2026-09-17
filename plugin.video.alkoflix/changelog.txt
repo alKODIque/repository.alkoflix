@@ -1,3 +1,17 @@
+v2.2.38
+- Tester toutes les sources : NYAA utilise Spirited Away (2001) comme média dédié et affiche désormais sa vraie pochette au lieu du logo alkoFlix.
+- Tester toutes les sources : le titre réellement testé par NYAA est affiché pendant le diagnostic.
+- Tester toutes les sources : tolérance NYAA limitée au diagnostic pour les releases d’animés qui omettent l’année dans leur nom.
+- Aucun nettoyage/refactoring interne repris : base fonctionnelle v2.2.37 conservée telle quelle en dehors de ces ajustements NYAA.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.37
+- Source Movix retirée complètement d’alkoFlix : invisible dans les réglages, indisponible comme source normale ou de secours et exclue du test des sources.
+- Réglages : correction des dépendances des sources de secours après le retrait de Movix afin de conserver exactement le comportement de la v2.2.28 (une source désactivée redevient disponible comme source de secours).
+- Nyaa renommée « NYAA (animés japonais) » dans les réglages.
+- Tester toutes les sources : NYAA utilise désormais un film d’animation japonais dédié (Spirited Away, 2001) au lieu du film de test général.
+- Aucun autre comportement de la v2.2.28 n’est modifié.
+
 v2.2.28
 - Catalogues TMDb et alkoPaste : les dossiers de listes Trakt, MDBList et TMDb Lists respectent désormais strictement la séparation Films / Séries.
 - Les listes qui ne contiennent aucun média du type demandé sont masquées, afin d’éviter les dossiers vides après ouverture.
