@@ -1,3 +1,9 @@
+v2.2.40
+- Suivis Films : les Téléfilms (genre TMDb 10770) restent visibles dans Films tout en restant également présents dans Docus & Télé.
+- Catalogue TMDb : restauration du comportement propre de la racine Vos suivis de lecture (sections et filtres du catalogue), sans la transformer en copie du suivi global alkoFlix.
+- Catalogue alkoPaste : aucun changement de structure des suivis ; les filtres propres au catalogue sont conservés.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.38
 - Tester toutes les sources : NYAA utilise Spirited Away (2001) comme média dédié et affiche désormais sa vraie pochette au lieu du logo alkoFlix.
 - Tester toutes les sources : le titre réellement testé par NYAA est affiché pendant le diagnostic.
