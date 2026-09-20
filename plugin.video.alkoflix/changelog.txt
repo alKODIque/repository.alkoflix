@@ -1,3 +1,14 @@
+v2.2.42
+- Trakt : la déconnexion locale est désormais garantie même si la révocation distante du token échoue (token déjà invalide, panne réseau ou erreur de l’API).
+- Le comportement normal d’un compte Trakt valide reste inchangé ; la révocation distante est toujours tentée avant le nettoyage local.
+- Aucun changement aux autres services. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.41
+- TMDb : une autorisation expirée ou invalide ne provoque plus de crash lors de l’ouverture des listes personnelles ; une réponse API invalide est traitée proprement.
+- TMDb : la déconnexion efface désormais toujours le token, la session et les informations de compte locales, même si TMDb refuse la révocation distante d’une autorisation déjà invalide.
+- TMDb : les recommandations de compte gèrent également une réponse d’authentification invalide sans exception.
+- Aucun changement au comportement normal d’un compte TMDb valide. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.40
 - Suivis Films : les Téléfilms (genre TMDb 10770) restent visibles dans Films tout en restant également présents dans Docus & Télé.
 - Catalogue TMDb : restauration du comportement propre de la racine Vos suivis de lecture (sections et filtres du catalogue), sans la transformer en copie du suivi global alkoFlix.
