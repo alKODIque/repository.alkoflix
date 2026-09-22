@@ -1,3 +1,8 @@
+v2.2.43
+- Lecture : restauration du repli silencieux lorsqu’un lien sélectionné est HS ou impossible à démarrer ; alkoFlix passe automatiquement au lien suivant sans afficher le grand dialogue d’erreur natif de Kodi.
+- Le dialogue d’échec est fermé de façon ciblée (okdialog) : aucun retour à Dialog.Close(all,true), afin de préserver le sélecteur, le type de média et le contexte du menu après Stop.
+- L’ordre des sources, la résolution des liens et le comportement du sélecteur restent inchangés. Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.42
 - Trakt : la déconnexion locale est désormais garantie même si la révocation distante du token échoue (token déjà invalide, panne réseau ou erreur de l’API).
 - Le comportement normal d’un compte Trakt valide reste inchangé ; la révocation distante est toujours tentée avant le nettoyage local.
