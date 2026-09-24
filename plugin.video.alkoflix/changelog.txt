@@ -1,3 +1,110 @@
+v2.2.68 - 2026-09-23
+- Restaure le comportement stable v2.2.43 de l’ordre « Prochains épisodes » : la date de tri redevient celle de l’épisode d’ancrage de progression, sans utiliser une autre date globale de série.
+- Restaure le comportement stable v2.2.43 de « Combiné » pour les séries : même construction qu’avant les changements récents, sans forcer le mode Continuer à regarder dans le candidat interne.
+- Conserve l’exclusion S00 et les fonctions de synchronisation récentes ; aucun autre menu de suivi n’est modifié.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.67
+- Correction de la synchro fournisseur vers Local : les reprises utilisent désormais le même moteur natif Trakt/MDBList que les dossiers Continuer à regarder.
+- Les films en cours sont ainsi conservés dans le Local et réapparaissent dans Combiné après synchronisation.
+- Aucun changement à la logique propre du dossier Combiné.
+
+v2.2.66 - 2026-09-23
+- Prochains épisodes : en tri « Récemment regardé », l’ordre des séries reprend désormais la même activité récente que « Continuer à regarder ».
+- Le dernier SxxEyy vu reste utilisé uniquement pour déterminer quel épisode proposer ensuite ; la date de tri est maintenant la date de visionnage la plus récente de toute la série.
+- Corrige les écarts d’ordre après une synchronisation fournisseur → Local ou après la relecture d’un épisode plus ancien.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.65 - 2026-09-23
+- Synchronisation Trakt/MDBList → Local : la base de visionnage locale est désormais reconstruite comme un watched.db neuf (tables Vu, reprises et séries abandonnées recréées), sans suppression manuelle nécessaire.
+- Les dates/heures importées depuis Trakt et MDBList sont converties vers le format local alkoFlix tout en conservant le même instant, ce qui rétablit notamment le tri cohérent de « Prochain épisode » avec le fournisseur Local.
+- Une lecture distante échouée annule la reconstruction avant toute modification locale.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.64 - 2026-09-23
+- Correction de la synchronisation fournisseur → Local : Trakt et MDBList sont désormais lus directement depuis leurs API au lieu de recopier leurs bases cache intermédiaires.
+- Trakt → Local reconstruit les épisodes vus SxxEyy depuis sync/watched/shows?extended=progress afin que le dossier « Prochain épisode » fonctionne avec le fournisseur Local.
+- MDBList → Local applique le même principe avec sync/watched et sync/playback.
+- Une erreur de lecture distante n’efface jamais watched.db ; l’écriture locale n’a lieu qu’après obtention d’un instantané complet.
+- Les dates/heures de visionnage, reprises et séries abandonnées restent préservées.
+
+v2.2.63
+- Synchronisation MDBList : les éléments not_found sont désormais signalés comme ignorés sans faire échouer toute la synchronisation.
+- Le message de fin distingue une vraie erreur API d'un refus unitaire MDBList.
+- Aucun changement à Trakt, aux suivis ou aux compteurs.
+
+v2.2.62 - 2026-09-23
+- Correction ciblée de la synchronisation manuelle Trakt → alkoFlix (Local).
+- Avant la copie vers Local, alkoFlix force désormais une reconstruction complète des indicateurs Trakt depuis l'API au lieu de pouvoir réutiliser un cache d'activité inchangé.
+- Évite qu'un trakt.db incomplet ou vide soit réconcilié dans watched.db et vide les dossiers « Prochain épisode ».
+- Aucun changement à MDBList, aux compteurs de séries, aux règles TMDb ou au fonctionnement normal des menus hors synchronisation manuelle.
+
+v2.2.61
+- Synchronisation manuelle MDBList fiabilisée dans les deux sens.
+- MDBList → Local force désormais une relecture complète des données MDBList afin de préserver les dates/heures originales de visionnage et d’abandon au lieu de dépendre d’un cache d’activité possiblement inchangé.
+- Local → MDBList conserve explicitement watched_at pour chaque film/épisode et dropped_at pour chaque série abandonnée.
+- Une réponse MDBList contenant not_found n’est plus considérée comme une synchronisation réussie.
+- Aucun changement à Trakt ni aux calculs de progression/saisons.
+
+v2.2.60 - 2026-09-23
+- Base restaurée strictement sur la v2.2.54 ; aucun changement des v2.2.55 à v2.2.59 n'est repris.
+- Synchronisation des séries abandonnées ajoutée aux quatre actions manuelles : Trakt → Local, Local → Trakt, MDBList → Local et Local → MDBList.
+- Fournisseur → Local : la liste locale des séries abandonnées est réconciliée avec celle du fournisseur choisi, avec protection contre un effacement local si la lecture distante échoue.
+- Local → fournisseur : fusion uniquement ; les séries déjà abandonnées à distance ne sont ni retirées ni réécrites.
+- Aucun changement aux compteurs, saisons, statuts Vu/Non vu, reprises ou règles TMDb de la v2.2.54.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.54 - 2026-09-23
+- Synchronisation manuelle Local → Trakt/MDBList : la date et l'heure originales de visionnage sont désormais transmises pour chaque film et chaque épisode au lieu d'être remplacées par l'heure de la synchronisation.
+- Les dates locales alkoFlix sont converties vers UTC en respectant le fuseau horaire du système Kodi ; les dates déjà issues de Trakt/MDBList conservent le même instant lors d'un transfert vers l'autre service.
+- Aucun historique distant n'est supprimé : le comportement de fusion des actions de synchronisation reste inchangé.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.53
+- Base restaurée : cette version repart directement de la v2.2.49 afin de préserver la vitesse, le tri et le comportement des dossiers « Continuer à regarder ».
+- Correction ciblée : lorsqu'une saison est terminée et que le fournisseur annonce encore des épisodes non vus, « Continuer à regarder » peut désormais poursuivre vers la saison suivante déjà diffusée.
+- Le correctif est appliqué uniquement à l'ouverture de la série, après chargement normal de ses épisodes : aucun recalcul supplémentaire n'est ajouté au dossier parent et son ordre reste celui de la v2.2.49.
+- Aucun élément de la refonte Local des v2.2.50 à v2.2.52 n'est repris.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.49 - 2026-09-23
+- MDBList / « Continuer à regarder » : /upnext sert désormais uniquement de point de départ ; alkoFlix complète ensuite avec tous les épisodes réguliers déjà diffusés correspondant au nombre d'épisodes non vus annoncé par MDBList, comme le comportement déjà appliqué à Trakt.
+- Les anciens épisodes antérieurs au prochain épisode natif MDBList ne sont pas réintroduits ; les points de reprise actifs restent prioritaires.
+- Passage Trakt ou MDBList → alkoFlix (Local) : les statuts Vu et les reprises sont maintenant transférés automatiquement lorsque le fournisseur est changé manuellement vers Local.
+- Déconnexion Trakt/MDBList : la copie vers Local devient une vraie réconciliation des statuts Vu et des reprises au lieu d'une simple fusion avec d'anciens états locaux.
+- Ajout d'actions manuelles pour synchroniser Trakt ↔ Local et MDBList ↔ Local. L'envoi Local → fournisseur est une fusion : aucun historique déjà présent sur le service n'est supprimé.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.48
+- Correction de « Continuer à regarder » : les épisodes entamés avec un point de reprise restent désormais présents, même lorsqu'aucun épisode de la série n'a encore été entièrement vu.
+- Trakt/MDbList conservent leur prochain épisode natif comme référence ; les reprises actives sont ajoutées sans réintroduire les anciens épisodes hors progression.
+
+v2.2.47 - 2026-09-23
+- Continuer à regarder : avec Trakt, les épisodes affichés suivent désormais directement la progression native Trakt (next/progress) au lieu de « TMDb moins les épisodes vus ».
+- Les anciens épisodes non comptabilisés par Trakt ne remontent plus artificiellement dans Continuer à regarder.
+- Marquer vu/non vu Trakt : une réponse HTTP acceptée n'est plus signalée comme une erreur si Trakt ne comptabilise pas l'épisode dans sa progression ; aucun faux marqueur local n'est créé dans ce cas.
+
+v2.2.46
+- Suivis séries : Trakt/MDBList deviennent la source de vérité pour les compteurs de progression.
+- Trakt : utilisation native de aired_episodes + historique watched régulier (S00 exclue).
+- MDBList : utilisation native de progress.total_episode_count / watched_episode_count depuis /upnext.
+- Suppression du double recalcul TMDb des marqueurs dans « Continuer à regarder ».
+
+v2.2.45
+- Indicateurs de saisons : les épisodes futurs déjà créés dans TMDb ne sont plus comptés comme « à voir » avant leur date de diffusion ; la dernière saison active utilise désormais les dates réelles des épisodes, comme le compteur AiredEpisodes de TMDb Helper.
+- Séries en diffusion : si last_episode_to_air est absent ou momentanément en retard, next_episode_to_air sert de repli pour calculer le nombre d’épisodes réellement diffusés au lieu de number_of_episodes, qui peut inclure des épisodes futurs.
+- « Prochain épisode » : les épisodes S00/Specials ne peuvent plus servir de point de départ au calcul « dernier épisode vu + 1 » pour Trakt ou le suivi alkoFlix. MDBList conserve son /upnext natif.
+- Specials : le dossier Saison 00 est libellé « Épisodes spéciaux » et son indicateur ne compte que les spéciaux déjà diffusés.
+- Specials : un épisode S00 individuel peut maintenant être marqué Vu/Non vu avec alkoFlix, Trakt ou MDBList ; il reste exclu des compteurs globaux de progression de la série.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
+v2.2.44
+- Suivis Séries : les épisodes de la saison 00 (Specials) conservent leur statut Vu mais sont exclus du compteur global vus/restants, comme dans TMDb Helper.
+- « Séries terminées » : une série ne peut plus être classée terminée prématurément parce que des épisodes S00 ont gonflé son compteur de visionnage.
+- « Continuer à regarder » : lorsqu’une série encore en diffusion paraît entièrement vue avec les métadonnées en cache, alkoFlix vérifie ponctuellement le nombre actuel d’épisodes réguliers diffusés auprès de TMDb ; un nouvel épisode disponible fait ainsi réapparaître la série sans modifier « Prochain épisode ».
+- Indicateurs Séries : le nombre d’épisodes vus/restants et le pourcentage utilisent le même total régulier cohérent, avec protection contre les valeurs négatives ou supérieures à 100 %.
+- Aucun changement au statut individuel des Specials, à l’historique de visionnage ni à la logique de « Prochain épisode ». Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.43
 - Lecture : restauration du repli silencieux lorsqu’un lien sélectionné est HS ou impossible à démarrer ; alkoFlix passe automatiquement au lien suivant sans afficher le grand dialogue d’erreur natif de Kodi.
 - Le dialogue d’échec est fermé de façon ciblée (okdialog) : aucun retour à Dialog.Close(all,true), afin de préserver le sélecteur, le type de média et le contexte du menu après Stop.
