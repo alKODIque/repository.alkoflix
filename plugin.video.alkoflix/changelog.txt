@@ -1,3 +1,37 @@
+2.2.74
+- Si « Synchroniser le suivi vers alkoPaste » est activé sans clé API personnelle alkoPastes, alkoFlix affiche désormais un avertissement, propose d’ouvrir Service(s) et remet automatiquement l’option à OFF.
+- Le fonctionnement historique des sauvegardes/restaurations manuelles est confirmé : watched.db reste incluse avec le fournisseur Local lorsque la synchronisation des suivis est désactivée, et reste exclue lorsqu’elle est activée.
+
+2.2.73
+- Simplification de la synchronisation multi-appareils du suivi Local : une seule option « Synchroniser le suivi vers alkoPaste », placée directement sous le choix du fournisseur de suivi.
+- Lorsque cette option est activée avec alkoFlix (Local), l’envoi et la récupération sont entièrement automatiques : récupération au démarrage, vérification régulière des changements distants et publication des changements locaux.
+- Les anciennes options Envoi auto / Récupération auto / Envoyer maintenant / Récupérer maintenant ne sont plus présentées.
+- Sous Trakt ou MDBList, l’option est grisée et aucune tâche de synchronisation alkoPaste des suivis n’est exécutée.
+- watched.db reste exclue des sauvegardes/restaurations manuelles lorsque cette synchronisation est activée.
+
+2.2.72
+- La synchronisation multi-appareils des suivis alkoFlix est disponible uniquement avec le fournisseur de visionnage Local ; aucune tâche de fond dédiée n’est lancée sous Trakt ou MDBList.
+- L’option multi-appareils est grisée lorsque Trakt ou MDBList est sélectionné, tout en conservant le choix pour un retour ultérieur au fournisseur Local.
+- Lorsque la synchronisation multi-appareils des suivis est activée, watched.db est exclue des sauvegardes/restaurations manuelles alkoPastes afin d’éviter deux mécanismes concurrents pour les mêmes états.
+
+2.2.70
+- Ajout de la Watchlist aux synchronisations fournisseur ↔ Local : Trakt/MDBList → Local récupère aussi la Watchlist du service, et Local → Trakt/MDBList ajoute la Watchlist locale sans supprimer les éléments déjà présents à distance.
+- La copie fournisseur → Local utilisée lors d’une déconnexion ou d’un passage vers le fournisseur Local tient également compte de la Watchlist.
+- Protection contre les erreurs distantes : une Watchlist impossible à récupérer n’est jamais interprétée comme une liste vide et ne peut pas effacer la Watchlist locale.
+
+2.2.71
+- Ajout d’une synchronisation multi-appareils des suivis locaux via un alkoPaste privé dédié.
+- Fusion horodatée des statuts vus/non vus, reprises, séries abandonnées et Watchlist locale, avec tombstones pour préserver les suppressions.
+- Les conflits entre appareils sont résolus par la modification la plus récente; Trakt et MDBList ne sont pas modifiés.
+- Ajout des options Envoi auto / Récupération auto et des actions manuelles dans les réglages du suivi de lecture.
+
+v2.2.69 - 2026-09-25
+- Ajout d’un dossier « Watchlist » dans les menus « Vos suivis de lecture », avec le même découpage Films/Séries et les mêmes filtres contextuels TMDb/alkoPaste.
+- Trakt et MDBList réutilisent strictement leurs Watchlists existantes ; aucune logique fournisseur n’est modifiée.
+- Ajout d’une Watchlist locale alkoFlix avec ajout/retrait depuis le menu contextuel.
+- Les films entièrement vus sont retirés automatiquement de la Watchlist locale ; une série n’en sort automatiquement que lorsqu’elle est réellement terminée sur TMDb et entièrement vue.
+- Compatibilité Kodi 21 Omega et Kodi 22 Piers préservée.
+
 v2.2.68 - 2026-09-23
 - Restaure le comportement stable v2.2.43 de l’ordre « Prochains épisodes » : la date de tri redevient celle de l’épisode d’ancrage de progression, sans utiliser une autre date globale de série.
 - Restaure le comportement stable v2.2.43 de « Combiné » pour les séries : même construction qu’avant les changements récents, sans forcer le mode Continuer à regarder dans le candidat interne.
