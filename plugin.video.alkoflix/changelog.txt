@@ -1,0 +1,25 @@
+2.3.17
+- Prise en charge des repères d’intro, de récap et de générique via TheIntroDB pour Up Next 1.3.0.
+- Tous les réglages et les actions restent gérés par Up Next, sans nouvelle option dans alkoFlix.
+- Récupération en arrière-plan selon la durée du fichier, avec cache et retour au fonctionnement habituel si les repères sont absents ou indisponibles.
+- Protection contre les réponses arrivées après un arrêt ou un changement de lecture.
+- Journalisation utile sans débogage : cache, repères reçus ou rejetés, erreurs réseau et transmission à Up Next.
+
+2.3.16
+- Journalisation INFO du renouvellement OAuth Trakt réussi, sans exposer les jetons.
+- Migration des appels d'authentification Trakt vers auth.trakt.tv (connexion par code, renouvellement des jetons et deconnexion).
+- Les appels de donnees restent sur api.trakt.tv ; aucune nouvelle connexion requise pour les comptes deja actifs.
+
+2.3.15
+- Adaptation à la nouvelle gestion OAuth Trakt : renouvellement sécurisé des jetons à usage unique et reconnexion guidée si nécessaire.
+- Respect des quotas Trakt et prévention des doubles envois en cas d'erreur réseau.
+- Pagination complète des listes personnelles et des séries abandonnées ; amélioration de la connexion par code appareil.
+
+2.3.14
+- Sélection du service de notation limitée aux comptes connectés (Trakt, MDbList, TMDb).
+
+2.3.13
+- Notation automatique proposée uniquement pour les films ; notation des épisodes conservée dans les menus contextuels.
+
+2.3.12
+- Ajustements et journalisation du système de notation.
