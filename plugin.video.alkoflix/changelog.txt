@@ -1,3 +1,7 @@
+2.3.18
+- Nouvelle distribution pour éviter la réutilisation du paquet 2.3.17 défectueux en cache lors de la mise à jour.
+- Fonctionnalités et correctifs identiques à la 2.3.17.
+
 2.3.17
 - Prise en charge des repères d’intro, de récap et de générique via TheIntroDB pour Up Next 1.3.0.
 - Tous les réglages et les actions restent gérés par Up Next, sans nouvelle option dans alkoFlix.
