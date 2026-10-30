@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.3.20" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.21" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -23,7 +23,7 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Improved native Kodi playback and TMDb Helper integration. Paginated Continue Watching episodes. Removed Zone-Telechargement; ALKO/Comet presets, safer maintenance and concise logging.</news>
-        <news lang="fr">Lecture native Kodi et intégration TMDb Helper fiabilisées. Pagination de « Continuer à regarder ». Retrait de Zone-Téléchargement, préréglages ALKO/Comet 10/5, maintenance clarifiée et journalisée.</news>
+        <news lang="en">Fixed episode runtimes: preserve each episode's TMDb duration in episode lists and playback metadata.</news>
+        <news lang="fr">Durée des épisodes corrigée : conservation de la durée TMDb propre à chaque épisode dans les listes et les métadonnées de lecture.</news>
     </extension>
 </addon>
