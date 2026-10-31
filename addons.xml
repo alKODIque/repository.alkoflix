@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.21" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.22" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -24,8 +24,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Fixed episode runtimes: preserve each episode's TMDb duration in episode lists and playback metadata.</news>
-        <news lang="fr">Durée des épisodes corrigée : conservation de la durée TMDb propre à chaque épisode dans les listes et les métadonnées de lecture.</news>
+        <news lang="en">Improved native Kodi playback and episode transitions: safer automatic handoffs, native resolution for fallback links and improved Up Next integration.</news>
+        <news lang="fr">Lecture native Kodi et enchaînements d’épisodes fiabilisés : protection des transitions automatiques, résolution native des liens de secours et intégration Up Next améliorée.</news>
     </extension>
 </addon>
 

@@ -1,3 +1,28 @@
+2.3.22
+- Lecture native Kodi : les liens de secours et les commandes de lecture sans handle passent désormais par une nouvelle demande native, puis setResolvedUrl.
+- Enchaînement automatique : protection contre les événements de fin reçus pendant l’ouverture de l’épisode suivant, afin d’éviter les faux échecs de lecture.
+- Up Next : préparation des informations et des repères avant la lecture, puis transmission unique au démarrage vidéo, pour accompagner le correctif officiel du service.
+- Conservation des métadonnées, des illustrations et du choix de reprise lors d’un changement de lien ; routes des films et épisodes réutilisables après le relais.
+- Une ouverture interrompue sans démarrage ni erreur explicite ne déclenche plus automatiquement un autre lien.
+- Players TMDb Helper Play et Select compatibles avec la résolution native conservés.
+
+2.3.21
+- Durée des épisodes : conservation de la durée TMDb propre à chaque épisode dans les listes d'une saison et « Tous les épisodes », y compris « Continuer à regarder ».
+- Transmission de cette même durée aux métadonnées utilisées pour la recherche de liens et la lecture.
+- Base 2.3.20 ; repli habituel conservé lorsque la durée de l'épisode est absente.
+
+2.3.20
+- Lecture native Kodi : résolution des URL et gestion des annulations fiabilisées, avec conservation du choix entre les liens de secours.
+- Reprise de lecture pilotée par les réglages Kodi ; suppression des options de reprise propres à alkoFlix.
+- Players TMDb Helper Play/Select adaptés à la résolution native et récupération fiabilisée du contexte des épisodes du calendrier.
+- Séries dans « Continuer à regarder » : épisodes à plat, triés par saison/épisode, avec pagination de 20 éléments.
+- Retrait de la source native Zone-Téléchargement, y compris son activation par d'anciens réglages, préréglages ou sauvegardes.
+- Préréglages 1080p et 4K : ALKO en source principale, Comet seul en secours, 10 liens maximum et 5 par résolution.
+- Restauration des réglages compatible avec les anciens fichiers XML et protection des comptes et données personnelles.
+- Onglet Maintenance réorganisé, libellés et confirmations clarifiés, options obsolètes retirées.
+- Nettoyages conservant recherches enregistrées, historiques, menus personnalisés, favoris et suivi local ; aucun téléchargement ALKO implicite lors du vidage des caches.
+- Journalisation concise des actions manuelles de maintenance, visible sans débogage, avec résultat, durée et compteurs utiles.
+
 2.3.18
 - Nouvelle distribution pour éviter la réutilisation du paquet 2.3.17 défectueux en cache lors de la mise à jour.
 - Fonctionnalités et correctifs identiques à la 2.3.17.
