@@ -1,3 +1,11 @@
+2.3.23
+- Épisodes cyan : commandes « Effacer la progression » et « Marquer vu/non vu » accessibles indépendamment de la date TMDb.
+- Continuer à regarder : conservation des épisodes commencés malgré une date TMDb future ou inconnue ; retrait des pochettes de séries sans épisode disponible ni reprise active.
+- Contrôle cohérent entre la pochette et son dossier, avec respect de la sélection Trakt/MDbList, des sorties du jour et de la pagination de 20 épisodes.
+- Rafraîchissement des widgets après une modification manuelle du statut d'un épisode.
+- Widgets de films sous Kodi Omega : choix « Reprendre / Recommencer » proposé après la sélection du lien, avec respect des réglages Kodi et de l'annulation.
+- Lecture en setResolvedUrl conservée ; parcours TMDb Helper et intégration Up Next préservés.
+
 2.3.22
 - Lecture native Kodi : les liens de secours et les commandes de lecture sans handle passent désormais par une nouvelle demande native, puis setResolvedUrl.
 - Enchaînement automatique : protection contre les événements de fin reçus pendant l’ouverture de l’épisode suivant, afin d’éviter les faux échecs de lecture.
