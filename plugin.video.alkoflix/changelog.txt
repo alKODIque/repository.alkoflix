@@ -1,3 +1,7 @@
+2.3.25
+- Dossier « À suivre » : retrait du fanart pour respecter l’arrière-plan choisi dans le skin, comme pour « Page suivante ».
+- Icône lecture-bouton.png et cadrages portrait/paysage conservés avec les packs classique et Coal, y compris en cas de repli sur l’icône d’origine.
+
 2.3.24
 - Séries : ajout des dossiers « Groupes alternatifs » puis « À suivre », en complément des saisons TMDb habituelles.
 - Groupes alternatifs : parcours des découpages TMDb, de leurs sous-groupes et de leurs épisodes, avec conservation de l’ordre et de la numérotation alternatifs ; particulièrement utile pour les animés japonais.

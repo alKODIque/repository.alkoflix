@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.24" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.25" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -24,8 +24,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Series navigation: alternative TMDb episode groups, À suivre with local/Trakt/MDBList tracking, Up Next in the selected group order, and single-season flattening that preserves available groups and visible specials.</news>
-        <news lang="fr">Navigation des séries : Groupes alternatifs TMDb, dossier À suivre avec suivi local/Trakt/MDbList, enchaînement Up Next dans le découpage choisi et aplatissement d’une seule saison respectant les groupes et les spéciaux affichés.</news>
+        <news lang="en">À suivre folder: remove the icon used as fanart so the skin background remains visible. Keep portrait and landscape artwork for both the default and Coal icon packs.</news>
+        <news lang="fr">Dossier À suivre : suppression de l’icône utilisée en fanart pour laisser apparaître l’arrière-plan du skin. Visuels portrait et paysage conservés avec les icônes classiques et Coal.</news>
     </extension>
 </addon>
 
