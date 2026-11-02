@@ -1,3 +1,17 @@
+2.3.24
+- Séries : ajout des dossiers « Groupes alternatifs » puis « À suivre », en complément des saisons TMDb habituelles.
+- Groupes alternatifs : parcours des découpages TMDb, de leurs sous-groupes et de leurs épisodes, avec conservation de l’ordre et de la numérotation alternatifs ; particulièrement utile pour les animés japonais.
+- Suivi, reprises, notations et commandes contextuelles rattachés aux identifiants saison/épisode TMDb d’origine ; métadonnées localisées et durées propres aux épisodes conservées.
+- Up Next : enchaînement dans le découpage choisi, y compris les changements de sous-groupe et les ordres différents du découpage TMDb habituel ; arrêt à la fin du découpage et contrôle des dates de diffusion conservé.
+- À suivre : épisodes non vus et reprises selon le fournisseur sélectionné — local alkoFlix, Trakt ou MDbList — sans compte externe obligatoire pour le suivi local ; première saison régulière à plat pour les séries jamais commencées.
+- À suivre : inclusion des épisodes cyan dont la date TMDb est future ou inconnue, même si le fournisseur ne les inclut pas encore dans sa progression native ; les épisodes déjà vus restent écartés, sauf reprise active.
+- Pagination de 20 épisodes dans les nouveaux dossiers ; règles de disponibilité de « Continuer à regarder » et des autres dossiers de suivi conservées.
+- Mode « Aplatir si une seule saison » : conservation de la vue par saisons si des groupes alternatifs existent ou si des épisodes spéciaux sont présents et leur affichage activé. Aucun dossier « À suivre » dans une vue effectivement aplatie.
+- Visuels : illustrations de la série pour les groupes ; icône lecture-bouton.png du pack actif cadrée en portrait et paysage pour « À suivre », avec conservation du style Coal. Aucune mise à jour du pack Coal 1.0.3 nécessaire.
+- Récupération des groupes tolérant les réponses vides ou indisponibles.
+- Limite connue : le choix du groupe est conservé pendant l’enchaînement mais n’est pas encore mémorisé pour un retour via « À suivre » ou « Continuer à regarder » ; évolution inscrite dans TODO.md.
+- La sélection des liens reste dépendante de leur nommage par les uploadeurs ; un nom ambigu ou incorrect peut conduire au mauvais épisode.
+
 2.3.23
 - Épisodes cyan : commandes « Effacer la progression » et « Marquer vu/non vu » accessibles indépendamment de la date TMDb.
 - Continuer à regarder : conservation des épisodes commencés malgré une date TMDb future ou inconnue ; retrait des pochettes de séries sans épisode disponible ni reprise active.
