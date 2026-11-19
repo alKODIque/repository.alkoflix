@@ -1,3 +1,13 @@
+2.3.66 (19-11-2026)
+- Optimisation du chargement des widgets du catalogue alkoPaste et du suivi combiné, avec moins de fiches préparées et de lectures répétées.
+- Calendriers des suivis de lecture regroupés par rubrique sans supprimer les calendriers individuels. Épisodes d’avant-hier à aujourd’hui ; fiches séries à partir de demain.
+- Ajout de « Recommandations combiné » et amélioration des menus « Parce que vous avez regardé », des pochettes, des métadonnées et de la pagination.
+- Listes Trakt et MDbList chargées à la demande, pagination optimisée et nouveaux caches avec invalidation ciblée. Présentation des catalogues et calendriers harmonisée.
+- Up Next : enchaînement des sagas de films avec repères de générique TheIntroDB, améliorations des vignettes d’épisodes et option de notation après visionnage.
+- Menu contextuel : Watchlist du fournisseur actif accessible directement, avec confirmation d’ajout. Correction des recherches de séries.
+- Compatibilité visuelle avec Arctic Fuse 3 : fanarts supplémentaires neutres, icônes, vues et libellés de calendriers corrigés.
+- Sauvegardes et restauration sécurisées ; recherche des sources, messages Kodi et métadonnées fiabilisés. Retrait des anciennes sources Wawacity et Free-Telecharger.
+
 2.3.25
 - Dossier « À suivre » : retrait du fanart pour respecter l’arrière-plan choisi dans le skin, comme pour « Page suivante ».
 - Icône lecture-bouton.png et cadrages portrait/paysage conservés avec les packs classique et Coal, y compris en cas de repli sur l’icône d’origine.

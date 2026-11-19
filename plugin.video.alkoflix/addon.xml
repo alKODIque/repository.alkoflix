@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.3.25" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.66" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.requests" version="2.31.0" />
+        <!-- Explicit HTTP dependencies: also expose them directly to this invoker. -->
+        <import addon="script.module.idna" version="3.4.0" />
+        <import addon="script.module.certifi" version="2023.5.7" />
+        <import addon="script.module.chardet" version="5.1.0" />
+        <import addon="script.module.urllib3" version="1.26.16+matrix.1" />
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.addon.signals" />
         <import addon="resource.images.alkodicons.coal" version="1.0.0" optional="true" />
@@ -23,7 +28,7 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">À suivre folder: remove the icon used as fanart so the skin background remains visible. Keep portrait and landscape artwork for both the default and Coal icon packs.</news>
-        <news lang="fr">Dossier À suivre : suppression de l’icône utilisée en fanart pour laisser apparaître l’arrière-plan du skin. Visuels portrait et paysage conservés avec les icônes classiques et Coal.</news>
+        <news lang="en">Optimized widgets, viewing progress, calendars and Up Next.</news>
+        <news lang="fr">Optimisation des widgets, suivis, calendriers et Up Next.</news>
     </extension>
 </addon>
