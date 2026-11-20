@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.66" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.72" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -29,8 +29,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Optimized widgets, viewing progress, calendars and Up Next.</news>
-        <news lang="fr">Optimisation des widgets, suivis, calendriers et Up Next.</news>
+        <news lang="en">An optional flat episode list is available in Trakt and MDbList account calendars. Choose the date range, sort order and whether to focus on today.</news>
+        <news lang="fr">Dans Mes comptes, les calendriers Trakt et MDbList peuvent afficher une seule liste d’épisodes avec une période, un ordre de tri et un positionnement sur aujourd’hui réglables.</news>
     </extension>
 </addon>
 

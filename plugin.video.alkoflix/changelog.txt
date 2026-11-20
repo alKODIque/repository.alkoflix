@@ -1,3 +1,28 @@
+2.3.72 (20-11-2026)
+- Dans Comptes & services, « Aplatir le calendrier » affiche les épisodes sur une seule liste dans les calendriers des comptes Trakt et MDbList. Le nombre de jours précédents et à venir, l’ordre de tri et le positionnement sur aujourd’hui sont réglables. L’affichage par jour reste le choix par défaut.
+
+2.3.71 (20-11-2026)
+- Trakt et MDbList relisent les listes personnelles à leur ouverture. Un chargement de widget antérieur au retrait ne peut plus rétablir l’ancienne liste en cache.
+- Gestion MDbList envoie le retrait confirmé à la liste statique choisie, même si une ancienne copie locale indique que le titre est absent.
+- Dans le compte TMDb, « Trier par… » permet de choisir l’ordre des titres d’une liste personnelle, de la Watchlist ou des favoris. Le tri s’applique avant la pagination.
+
+2.3.70 (20-11-2026)
+- Depuis une liste personnelle ou Gestion TMDb, le retrait vérifie auprès de TMDb que le film ou la série a quitté la liste avant d’afficher la confirmation.
+- Le contenu des listes personnelles et leurs compteurs sont relus avec une requête actualisée. Un ancien chargement de widget ne peut plus remettre en cache la version précédente après une modification dans alkoFlix.
+
+2.3.69 (20-11-2026)
+- Gestion TMDb affiche d’abord quatre actions : Watchlist, Favoris, Ajouter à une liste TMDb et Retirer d’une liste TMDb. Les listes personnelles sont chargées au moment de choisir la destination ou la liste de retrait.
+- La création d’une liste est proposée lors d’un ajout ou d’une copie depuis Trakt ou MDbList. Le retrait direct depuis « Mes listes » reste disponible.
+
+2.3.68 (20-11-2026)
+- Dans « TMDb → Mes listes », un appui long sur un film ou une série propose « Retirer de cette liste TMDb ». La confirmation précise le titre et la liste. Le retrait utilise le compte TMDb, quel que soit le fournisseur de suivi.
+- Le message de réussite tient compte de la réponse de TMDb pour l’élément retiré.
+
+2.3.67 (20-11-2026)
+- Les fiches proposent les menus Gestion des comptes connectés. La Watchlist directe suit le fournisseur de suivi choisi. Depuis une saison ou un épisode, la gestion des listes porte sur la série.
+- Reprise des autorisations disponibles dans les anciens profils lors de la mise à jour.
+- Mes listes TMDb, leur contenu, la Watchlist et les favoris sont relus à l’ouverture. Les widgets de l’accueil peuvent réutiliser leur réponse pendant deux minutes. La commande « Actualiser la liste TMDb » actualise aussi le cache de cette liste.
+
 2.3.66 (19-11-2026)
 - Optimisation du chargement des widgets du catalogue alkoPaste et du suivi combiné, avec moins de fiches préparées et de lectures répétées.
 - Calendriers des suivis de lecture regroupés par rubrique sans supprimer les calendriers individuels. Épisodes d’avant-hier à aujourd’hui ; fiches séries à partir de demain.
