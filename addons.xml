@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.72" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.85" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -29,8 +29,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">An optional flat episode list is available in Trakt and MDbList account calendars. Choose the date range, sort order and whether to focus on today.</news>
-        <news lang="fr">Dans Mes comptes, les calendriers Trakt et MDbList peuvent afficher une seule liste d’épisodes avec une période, un ordre de tri et un positionnement sur aujourd’hui réglables.</news>
+        <news lang="en">Clearlogos now prioritize TMDb artwork when available; Fanart.tv is used as a fallback. This also prevents an incorrect external logo from replacing the TMDb logo in widgets and menus.</news>
+        <news lang="fr">Les clearlogos privilégient maintenant TMDb lorsqu’un logo existe; Fanart.tv reste en secours. Un visuel externe incorrect ne remplace plus le logo TMDb dans les menus et widgets.</news>
     </extension>
 </addon>
 
