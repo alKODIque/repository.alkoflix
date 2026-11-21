@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.85" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.87" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -29,8 +29,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Clearlogos now prioritize TMDb artwork when available; Fanart.tv is used as a fallback. This also prevents an incorrect external logo from replacing the TMDb logo in widgets and menus.</news>
-        <news lang="fr">Les clearlogos privilégient maintenant TMDb lorsqu’un logo existe; Fanart.tv reste en secours. Un visuel externe incorrect ne remplace plus le logo TMDb dans les menus et widgets.</news>
+        <news lang="en">Fixed Quebec backgrounds disappearing when no language-neutral fanart exists. Neutral images still take priority, with the previous artwork as a safe fallback.</news>
+        <news lang="fr">Correction des arrière-plans québécois absents lorsqu’aucun fanart sans langue n’existe. Les images neutres restent prioritaires, avec retour au visuel disponible en secours.</news>
     </extension>
 </addon>
 
