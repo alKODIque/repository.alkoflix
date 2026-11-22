@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.3.96" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.4.0" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -28,7 +28,7 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Fanart.tv: new optional any-language artwork mode. Fanart.tv posters and season-specific landscapes take priority, with TMDb fallback. Neutral background fanarts and metadata languages stay unchanged.</news>
-        <news lang="fr">Fanart.tv : nouvelle option pour choisir les images sans restriction de langue. Les paysages propres aux saisons et les affiches Fanart.tv passent en premier ; TMDb reste en secours. Fanarts sans texte et textes préservés.</news>
+        <news lang="en">New Personalize Images action at the bottom of alkoFlix Options: choose posters, fanart, logos and landscapes for movies, shows, seasons and collections. Choices are portable via backup and require no extra network calls while browsing.</news>
+        <news lang="fr">Personnaliser les images dans Options (alkoFlix) : affiches, fanarts, clearlogos et landscapes, pour films, séries, saisons et sagas. Sélections sauvegardées/restaurées avec le profil ; aucun appel réseau supplémentaire pour les menus ou widgets.</news>
     </extension>
 </addon>
