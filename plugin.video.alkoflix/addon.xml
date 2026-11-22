@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.alkoflix" version="2.3.95" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.96" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -28,7 +28,7 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Quebec landscapes: French Canadian, generic French and French France images now take priority over English across TMDb and Fanart.tv. Neutral backgrounds, metadata languages and other artwork stay unchanged.</news>
-        <news lang="fr">Contenu Québec : Landscapes français (fr-CA, fr et fr-FR) avant l’anglais sur TMDb et Fanart.tv, y compris dans les saisons. Fanarts sans texte et autres visuels préservés.</news>
+        <news lang="en">Fanart.tv: new optional any-language artwork mode. Fanart.tv posters and season-specific landscapes take priority, with TMDb fallback. Neutral background fanarts and metadata languages stay unchanged.</news>
+        <news lang="fr">Fanart.tv : nouvelle option pour choisir les images sans restriction de langue. Les paysages propres aux saisons et les affiches Fanart.tv passent en premier ; TMDb reste en secours. Fanarts sans texte et textes préservés.</news>
     </extension>
 </addon>
