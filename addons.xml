@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.alkoflix" version="2.3.87" name="alkoFlix" provider-name="Les alKODIques">
+<addon id="plugin.video.alkoflix" version="2.3.95" name="alkoFlix" provider-name="Les alKODIques">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.31.0" />
@@ -29,49 +29,8 @@
             <fanart>fanart.jpg</fanart>
             <clearlogo>clearlogo.png</clearlogo>
         </assets>
-        <news lang="en">Fixed Quebec backgrounds disappearing when no language-neutral fanart exists. Neutral images still take priority, with the previous artwork as a safe fallback.</news>
-        <news lang="fr">Correction des arrière-plans québécois absents lorsqu’aucun fanart sans langue n’existe. Les images neutres restent prioritaires, avec retour au visuel disponible en secours.</news>
-    </extension>
-</addon>
-
-<addon id="resource.images.alkodicons.coal" name="Icônes alkoFlix - Coal" version="1.0.3" provider-name="Les alKODIques">
-    <extension point="kodi.resource.images" compile="false" type="icons" />
-    <requires>
-        <import addon="kodi.resource" version="1.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Coal alkoFlix Icons</summary>
-        <summary lang="fr">Icônes alkoFlix - Coal</summary>
-        <description lang="en">Optional alkoFlix icon pack with a Coal background.</description>
-        <description lang="fr">Pack d’icônes facultatif pour alkoFlix avec fond Coal.</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
-    </requires>
-    <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">Dépôt officiel alkoFlix pour Kodi.</summary>
-        <summary lang="en">Official alkoFlix repository for Kodi.</summary>
-        <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
-        <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
-        <license>GPL-3.0</license>
-        <news lang="fr">Dépôt officiel alkoFlix.</news>
-        <news lang="en">Official alkoFlix repository.</news>
-        <platform>all</platform>
-        <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+        <news lang="en">Quebec landscapes: French Canadian, generic French and French France images now take priority over English across TMDb and Fanart.tv. Neutral backgrounds, metadata languages and other artwork stay unchanged.</news>
+        <news lang="fr">Contenu Québec : Landscapes français (fr-CA, fr et fr-FR) avant l’anglais sur TMDb et Fanart.tv, y compris dans les saisons. Fanarts sans texte et autres visuels préservés.</news>
     </extension>
 </addon>
 </addons>
